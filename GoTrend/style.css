@@ -763,6 +763,7 @@ register-links {
 /*tarif*/
 .tarif-container {
   height: auto;
+  width: auto;
   background-color: #ec4953;
 }
 
@@ -815,7 +816,12 @@ register-links {
   color: #ec4953;
 }
 
+.tarifler-ul {
+  padding-left: 0px;
+}
+
 .tab-content {
+  justify-content: center;
   display: none;
   width: 65%;
 }
@@ -888,6 +894,11 @@ register-links {
   font-size: 20px;
   padding-left: 2%;
   margin: 0 4%;
+  border-radius: 15px;
+}
+
+.calculator-select {
+  border-radius: 15px;
 }
 
 .calculator-row select:focus {
@@ -903,6 +914,7 @@ register-links {
 }
 
 .btn-calculate {
+  border-radius: 15px;
   width: 20%;
   height: 60px;
   background-color: #ec4953;
@@ -925,7 +937,7 @@ register-links {
   float: right;
   margin-top: 3%;
   margin-right: 0 !important;
-  width: 50%;
+  width: auto;
 }
 
 .d-innovation-content {
@@ -2273,6 +2285,7 @@ register-links {
   }
 
   .btn-calculate {
+    border-radius: 15px;
     width: 30%;
     height: 25px;
     font-size: 11px;
