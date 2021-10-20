@@ -436,6 +436,7 @@ register-links {
 
 .footer-logo {
   margin-bottom: 32.5px;
+  margin-left: 19px;
 }
 .social-networks ul {
   display: flex;
@@ -818,6 +819,7 @@ register-links {
 
 .tarifler-ul {
   padding-left: 0px;
+  font-size: 20px;
 }
 
 .tab-content {
@@ -829,18 +831,19 @@ register-links {
 .kg-range {
   display: flex;
   flex-direction: column;
-  font-size: 23px;
+  font-size: 20px;
   color: #ffffff;
   margin-right: 5%;
 }
 
 .kg-range ul {
   list-style: none;
-  margin-top: 15%;
+  margin-top: 90px;
+  padding-left: 0px;
 }
 
 .kg-range ul li {
-  margin: 12% 0;
+  margin: 11% 0;
 }
 
 .calculator-container {
@@ -880,7 +883,7 @@ register-links {
   -moz-appearance: none; /* Firefox */
   -webkit-appearance: none; /* Safari and Chrome */
   background: transparent;
-  background-image: url(../icons/T-calculator-down.svg);
+  background-image: url(uploads/dropicon.png);
   background-repeat: no-repeat;
   background-position-x: 90%;
   background-position-y: 55%;
@@ -2005,10 +2008,6 @@ register-links {
     margin-bottom: 5px;
   }
 
-  .logo {
-    width: 70%;
-  }
-
   .social-networks {
     width: 100%;
   }
@@ -2241,12 +2240,6 @@ register-links {
     width: 30% !important;
     height: 20px;
     border-radius: 5px;
-  }
-
-  .kg-range {
-    font-size: 10px;
-    margin-top: 1.7%;
-    margin-right: 2%;
   }
 
   /*calculator*/
@@ -2863,11 +2856,6 @@ register-links {
     border-radius: 6px;
   }
 
-  .kg-range {
-    font-size: 18px;
-    margin-top: 1%;
-  }
-
   /*calculator*/
 
   .calculator-container {
@@ -3394,12 +3382,7 @@ register-links {
     font-size: 20px;
   }
 
-  .kg-range {
-    font-size: 22px;
-  }
-
   /*calculator*/
-
   .calculator-container {
     padding: 3%;
   }
@@ -3724,9 +3707,9 @@ register-links {
 }
 
 .prices ul li {
-  font-size: 23px;
+  font-size: 20px;
   color: #000000;
-  margin: 8% 0;
+  margin: 6% 0;
 }
 
 .prices h4 {
@@ -3734,27 +3717,12 @@ register-links {
   font-size: 12px;
 }
 
-.prices ul li {
-  font-size: 10px;
-  margin: 11.3% 0;
-}
-
 .prices h4 {
   font-size: 19px;
 }
 
-.prices ul li {
-  font-size: 18px;
-  margin: 10% 0;
-}
-
 .prices h4 {
   font-size: 23px;
-}
-
-.prices ul li {
-  font-size: 22px;
-  margin: 8.3% 0;
 }
 
 .country-row {
@@ -3777,12 +3745,10 @@ register-links {
 
 .country-tab-controls button {
   cursor: pointer;
-  width: 22% !important;
   height: 48px;
   border: 1px solid #ffffff;
   border-radius: 10px;
   background-color: transparent;
-  font-size: 26px;
   color: #ffffff;
   margin: 0 auto;
 }
@@ -3790,4 +3756,156 @@ register-links {
 .country-tab-controls button.active-tab {
   background-color: #fafafa;
   color: #ec4953;
+}
+
+@media only screen and (max-width: 500px) {
+  .kg-range {
+    font-size: 10px;
+    margin-top: 3%;
+    margin-right: 2%;
+  }
+
+  .prices ul li {
+    font-size: 10px;
+    margin: 11.3% 0;
+  }
+
+  .prices h4 {
+    margin-top: 10%;
+    font-size: 12px;
+  }
+
+  .kg-range ul {
+    margin-top: 19%;
+  }
+
+  .kg-range ul li {
+    margin: 10% 0;
+  }
+  .country-row {
+    align-items: center;
+  }
+
+  .footer-logo {
+    margin-left: -10px;
+  }
+
+  .country-row h3 {
+    font-size: 10px;
+  }
+
+  .country-tab-controls button {
+    font-size: 10px;
+    width: 30% !important;
+    height: 20px;
+    border-radius: 5px;
+  }
+
+  .tarif-container h2 {
+    font-weight: 600;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  .country-row h3 {
+    font-size: 23px;
+  }
+
+  .tarif-container h2 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .country-tab-controls button {
+    font-size: 20px;
+  }
+
+  .kg-range {
+    font-size: 20px;
+  }
+
+  .kg-range ul {
+    margin-top: 30%;
+  }
+
+  .kg-range ul li {
+    margin: 12% 0;
+  }
+  .prices h4 {
+    font-size: 23px;
+  }
+
+  .prices ul li {
+    font-size: 20px;
+    margin: 10% 0;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 500px) {
+  .tarif-container h2 {
+    font-weight: 700;
+    font-size: 35px;
+  }
+
+  .country-row h3 {
+    font-size: 20px;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .country-tab-controls button {
+    font-size: 16px;
+    width: 28% !important;
+    height: 30px;
+    border-radius: 6px;
+  }
+
+  .kg-range {
+    font-size: 18px;
+  }
+
+  .kg-range ul li {
+    margin: 11% 0;
+  }
+
+  .kg-range ul {
+    list-style: none;
+    margin-top: 40px;
+    padding-left: 0px;
+  }
+
+  .prices h4 {
+    font-size: 19px;
+  }
+
+  .prices ul li {
+    font-size: 18px;
+    margin: 10.2% 0;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .kg-range ul {
+    list-style: none;
+    margin-top: 57px;
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .kg-range ul {
+    list-style: none;
+    margin-top: 75px;
+    padding-left: 0px;
+  }
+  .kg-range ul li {
+    margin: 14% 0;
+  }
+}
+
+.logo {
+  margin-left: 30px;
 }
