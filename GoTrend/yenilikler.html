@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoTrend!</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="site.css">
     <link rel="stylesheet" href="lib/owl-carousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="lib/owl-carousel/assets/owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -104,154 +106,34 @@
         </div>
     </nav>
 
-    <main>
-        <section class="section3">
-            <div class="tarif-container">
-                <h2 class="tarif-cap">Tariflər</h2>
-                <div class="tarif-content">
-                    <div class="country-row" style="justify-content: center !important;">
-                        <h3>Ölkələr üzrə</h3>
-                        <div class="country-tab-controls">
-                            <button class="tab-link active-tab"
-                                onclick="changeTab(event, 'Turkey', 'active-tab', 'tab-content')">Türkiyə</button>
-                            <button class="tab-link"
-                                onclick="changeTab(event, 'USA', 'active-tab', 'tab-content')">ABŞ</button>
-                            <button class="tab-link"
-                                onclick="changeTab(event, 'China', 'active-tab', 'tab-content')">Çin</button>
-                        </div>
-                    </div>
+    <section class="section-yenilikler">
+        <div class="innovation-header">
+            <h1 class="content-header">Yeniliklər</h1>
+            <p>Xidmətlərimizlə bağlı ən son yeniliklər burada</p>
+        </div>
 
-                    <div class="kg-container d-flex" style="justify-content: center !important;">
-                        <div class="kg-range">
-                            <ul>
-                                <li>0 kq-dan - 0,25 kq-dək</li>
-                                <li>0,25 kq-dan - 0,5 kq-dək</li>
-                                <li>0,5 kq-dan - 0,75 kq-dək</li>
-                                <li>0,75 kq-dan - 1 kq-dək</li>
-                                <li>1 kq-dan - 5 kq-dək</li>
-                                <li>5 kq-dan yuxarı</li>
-                            </ul>
-                        </div>
+        <div class="container">
+            <div class="row yenilik-row">
+                <div class="col-lg-4 col-sm-12 col-md-12">
+                    <img class="yenilik-img" src="uploads/yenilik1.jpg" alt="">
+                    <h3 class="yenilik-p">Amerikadan onlayn kitab sifarişi <br>
+                        və çatdırılma</h3>
+                </div>
 
-                        <div id="Turkey" style="display:flex !important" class="tab-content">
-                            <div class="prices text-center">
-                                <h4>Adi məhsul</h4>
+                <div class="col-lg-4 col-sm-12 col-md-12">
+                    <img class="yenilik-img" src="uploads/yenilik2.jpg" alt="">
+                    <h3 class="yenilik-p">Flo-dan Azərbaycana ayaqqabı
+                        sifarişi və çatdırılması</h3>
+                </div>
 
-                                <ul class="tarifler-ul">
-                                    <li>2$</li>
-                                    <li>3$</li>
-                                    <li>4$</li>
-                                    <li>4.5$</li>
-                                    <li>4.75$</li>
-                                    <li>5$</li>
-                                </ul>
-                            </div>
-
-                            <div class="prices text-center">
-                                <h4>Maye məhsul</h4>
-
-                                <ul class="tarifler-ul">
-                                    <li>3$</li>
-                                    <li>4$</li>
-                                    <li>5$</li>
-                                    <li>6$</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div id="USA" class="tab-content">
-                            <div class="prices text-center">
-                                <h4>Adi məhsul</h4>
-
-                                <ul class="tarifler-ul">
-                                    <li>3$</li>
-                                    <li>4$</li>
-                                    <li>5$</li>
-                                    <li>5.5$</li>
-                                    <li>5.75$</li>
-                                    <li>6$</li>
-                                </ul>
-                            </div>
-
-                            <div class="prices text-center">
-                                <h4>Maye məhsul</h4>
-
-                                <ul class="tarifler-ul">
-                                    <li>4$</li>
-                                    <li>5$</li>
-                                    <li>6$</li>
-                                    <li>7$</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div id="China" class="tab-content">
-                            <div class="prices text-center">
-                                <h4>Adi məhsul</h4>
-
-                                <ul class="tarifler-ul">
-                                    <li>4$</li>
-                                    <li>5$</li>
-                                    <li>6$</li>
-                                    <li>7.5$</li>
-                                    <li>7.75$</li>
-                                    <li>8$</li>
-                                </ul>
-                            </div>
-
-                            <div class="prices text-center">
-                                <h4>Maye məhsul</h4>
-
-                                <ul class="tarifler-ul">
-                                    <li>5$</li>
-                                    <li>6$</li>
-                                    <li>7$</li>
-                                    <li>8$</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-4 col-sm-12 col-md-12">
+                    <img class="yenilik-img" src="uploads/yenilik1.jpg" alt="">
+                    <h3 class="yenilik-p">Amerikadan onlayn kitab sifarişi <br>
+                        və çatdırılma</h3>
                 </div>
             </div>
-
-        </section>
-
-        <section class="section4">
-            <div class="calculator-container w-100">
-                <div class="calculator-content">
-                    <h1 class="content-header calculator-header">Kalkulyator</h1>
-                    <div class="calculator-row">
-                        <select>
-                            <option>Türkiyə</option>
-                            <option>ABŞ</option>
-                            <option>Çin</option>
-                        </select>
-
-                        <select>
-                            <option>Adi məhsul</option>
-                            <option>Maye məhsul</option>
-                        </select>
-                    </div>
-
-                    <div class="calculator-row">
-                        <input type="text" class="calculator-input" placeholder="En*" />
-                        <input type="text" class="calculator-input" placeholder="Uzunluq*" />
-                    </div>
-
-                    <div class="calculator-row">
-                        <input type="text" class="calculator-input" placeholder="Hündürük*" />
-                        <input type="text" class="calculator-input" placeholder="Çəki(kq)*" />
-                    </div>
-
-                    <div class="text-center">
-                        <button class="btn-calculate">Hesabla</button>
-                    </div>
-                    <span class="text-center">$ 0.0</span>
-                </div>
-                <div class="calculator-img"><img src="uploads/calculator.png" /></div>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer>
         <div class="footer-content">

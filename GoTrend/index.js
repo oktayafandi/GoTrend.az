@@ -1,62 +1,57 @@
 ﻿function setActiveClass() {
-    var path = window.location.pathname;
-    var element = $("#navbar a[href='" + path + "']");
-    var cabinetLink = $("#cabinet-sidebar a[href='" + path + "']");
-    $(".activeLink").removeClass("activeLink");
-    element.addClass("activeLink");
-    if (!cabinetLink.hasClass('btn-declare'))
-        cabinetLink.addClass("activeLink");
+  var path = window.location.pathname;
+  var element = $("#navbar a[href='" + path + "']");
+  var cabinetLink = $("#cabinet-sidebar a[href='" + path + "']");
+  $(".activeLink").removeClass("activeLink");
+  element.addClass("activeLink");
+  if (!cabinetLink.hasClass("btn-declare")) cabinetLink.addClass("activeLink");
 }
 
 setActiveClass();
 
+if (window.matchMedia("(max-width: 500px)").matches) {
+  function setToggleActiveClass() {
+    var path = window.location.pathname;
+    var element = $("#toggle-menu a[href='" + path + "']");
+    var cabinetLink = $("#cabinet-sidebar a[href='" + path + "']");
+    $(".activeLink").removeClass("activeLink");
+    element.addClass("activeLink");
+    if (!cabinetLink.hasClass("btn-declare"))
+      cabinetLink.addClass("activeLink");
+  }
 
-if (window.matchMedia('(max-width: 500px)').matches) {
+  setToggleActiveClass();
 
-    function setToggleActiveClass() {
-        var path = window.location.pathname;
-        var element = $("#toggle-menu a[href='" + path + "']");
-        var cabinetLink = $("#cabinet-sidebar a[href='" + path + "']");
-        $(".activeLink").removeClass("activeLink");
-        element.addClass("activeLink");
-        if (!cabinetLink.hasClass('btn-declare'))
-            cabinetLink.addClass("activeLink");
-    }
-
-    setToggleActiveClass();
-
-    $("#toggle-navbar").click(function () {
-        $(".fa-bars").toggleClass("fa-times");
-        $('.toggle-menu').slideToggle();
-    })
+  $("#toggle-navbar").click(function () {
+    $(".fa-bars").toggleClass("fa-times");
+    $(".toggle-menu").slideToggle();
+  });
 }
-
 
 function changeTab(event, countryName, activeTabClass, tabContent) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName(tabContent);
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName(activeTabClass);
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(` ${activeTabClass}`, "");
-    }
-    document.getElementById(countryName).style.display = "flex";
-    event.currentTarget.className += ` ${activeTabClass}`;
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName(tabContent);
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName(activeTabClass);
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(
+      ` ${activeTabClass}`,
+      ""
+    );
+  }
+  document.getElementById(countryName).style.display = "flex";
+  event.currentTarget.className += ` ${activeTabClass}`;
 }
-
 
 function openFileBrowser(inputId, elementId, type) {
-    document.getElementById(inputId).click();
-    document.getElementById(inputId).addEventListener('change', function (e) {
-        if (type == 1)
-            $(`#${elementId}`).html($(this).val());
-        else
-            $(`#${elementId}`).val($(this).val());
-    })
+  document.getElementById(inputId).click();
+  document.getElementById(inputId).addEventListener("change", function (e) {
+    if (type == 1) $(`#${elementId}`).html($(this).val());
+    else $(`#${elementId}`).val($(this).val());
+  });
 }
-
 
 //$('.toolstd').click(function (e) {
 //    clickedDivId = $(this).siblings([HTMLDivElement]).attr('id');
@@ -64,28 +59,27 @@ function openFileBrowser(inputId, elementId, type) {
 //    hideToolkits(clickedDivId);
 //});
 
-$('#tbodyturkey').on('click', '.toolstd', function () {
-    clickedDivId = $(this).siblings([HTMLDivElement]).attr('id');
-    $(`#${clickedDivId}`).slideToggle();
-    hideToolkits(clickedDivId);
-})
-$('#tbodyusa').on('click', '.toolstd', function () {
-    clickedDivId = $(this).siblings([HTMLDivElement]).attr('id');
-    $(`#${clickedDivId}`).slideToggle();
-    hideToolkits(clickedDivId);
-})
-$('#tbodychine').on('click', '.toolstd', function () {
-    clickedDivId = $(this).siblings([HTMLDivElement]).attr('id');
-    $(`#${clickedDivId}`).slideToggle();
-    hideToolkits(clickedDivId);
-})
+$("#tbodyturkey").on("click", ".toolstd", function () {
+  clickedDivId = $(this).siblings([HTMLDivElement]).attr("id");
+  $(`#${clickedDivId}`).slideToggle();
+  hideToolkits(clickedDivId);
+});
+$("#tbodyusa").on("click", ".toolstd", function () {
+  clickedDivId = $(this).siblings([HTMLDivElement]).attr("id");
+  $(`#${clickedDivId}`).slideToggle();
+  hideToolkits(clickedDivId);
+});
+$("#tbodychine").on("click", ".toolstd", function () {
+  clickedDivId = $(this).siblings([HTMLDivElement]).attr("id");
+  $(`#${clickedDivId}`).slideToggle();
+  hideToolkits(clickedDivId);
+});
 
 function hideToolkits(id) {
-    var toolkits = document.getElementsByClassName('toolkit');
-    for (var i = 0; i < toolkits.length; i++) {
-        if (toolkits[i].attributes['id'].nodeValue !== id)
-            toolkits[i].style.display = 'none';
-        else
-            toolkits[i].style.display = 'block';
-    }
+  var toolkits = document.getElementsByClassName("toolkit");
+  for (var i = 0; i < toolkits.length; i++) {
+    if (toolkits[i].attributes["id"].nodeValue !== id)
+      toolkits[i].style.display = "none";
+    else toolkits[i].style.display = "block";
+  }
 }
