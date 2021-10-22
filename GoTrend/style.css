@@ -605,12 +605,16 @@ register-links {
 
 .register-input {
   width: 50%;
-  height: 60px;
+  height: 75px;
   border: 1px solid #595959;
   border-radius: 10px;
   margin-left: 6% !important;
   padding: 2%;
   font-size: 24px;
+}
+
+.city-option {
+  color: #75758b;
 }
 
 .reg-img-div {
@@ -2110,7 +2114,7 @@ register-links {
 
   .register-input {
     width: 45%;
-    height: 20px;
+    height: 25px;
     border-radius: 4px;
     margin-left: 4% !important;
     font-size: 11px;
@@ -3768,6 +3772,18 @@ register-links {
     margin-right: 2%;
   }
 
+  .yenilikler-img {
+    margin-left: -11px;
+    padding-bottom: 25px;
+  }
+
+  .forgotp-p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+
   .prices ul li {
     font-size: 10px;
     margin: 11.3% 0;
@@ -3981,7 +3997,7 @@ register-links {
   }
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (max-width: 1300px) {
   .kg-range ul {
     list-style: none;
     margin-top: 57px;
@@ -4089,4 +4105,38 @@ register-links {
 .yenilik-p {
   font-size: 25px;
   margin-top: 15px;
+}
+
+.forgotp-p {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.yenilikler-cap {
+  text-align: center !important;
+  font-weight: normal;
+  font-size: 27px;
+  color: #000000;
+  padding-bottom: 50px;
+}
+
+.yenilikler-p1 {
+  font-size: 18px;
+}
+
+.yenilikler-p2 {
+  padding-top: 25px;
+  font-size: 18px;
+  padding-bottom: 50px;
+}
+
+.yenilikler-head {
+  font-weight: 900;
+  font-size: 40px;
+  color: #ec495e;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  text-align: center !important;
 }
