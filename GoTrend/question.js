@@ -7,22 +7,27 @@ function setActiveClass() {
   if (!cabinetLink.hasClass("btn-declare")) cabinetLink.addClass("activeLink");
 }
 setActiveClass();
-if (window.matchMedia("(max-width: 500px)").matches) {
-  function setToggleActiveClass() {
-    var path = window.location.pathname;
-    var element = $("#toggle-menu a[href='" + path + "']");
-    var cabinetLink = $("#cabinet-sidebar a[href='" + path + "']");
-    $(".activeLink").removeClass("activeLink");
-    element.addClass("activeLink");
-    if (!cabinetLink.hasClass("btn-declare"))
-      cabinetLink.addClass("activeLink");
+
+$(document).ready(function () {
+  if (window.matchMedia("(max-width: 500px)").matches) {
+    function setToggleActiveClass() {
+      var path = window.location.pathname;
+      var element = $("#toggle-menu a[href='" + path + "']");
+      var cabinetLink = $("#cabinet-sidebar a[href='" + path + "']");
+      $(".activeLink").removeClass("activeLink");
+      element.addClass("activeLink");
+      if (!cabinetLink.hasClass("btn-declare"))
+        cabinetLink.addClass("activeLink");
+    }
+
+    setToggleActiveClass();
+    $("#toggle-navbar").click(function (e) {
+      e.preventDefault();
+      $(".fa-bars").toggleClass("fa-times");
+      $(".toggle-menu").slideToggle();
+    });
   }
-  setToggleActiveClass();
-  $("#toggle-navbar").click(function () {
-    $(".fa-bars").toggleClass("fa-times");
-    $(".toggle-menu").slideToggle();
-  });
-}
+});
 
 function toggleAnswer(questionId) {
   if ($(`#${questionId}`).hasClass("fa-minus")) {
