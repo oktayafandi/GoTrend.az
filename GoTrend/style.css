@@ -129,7 +129,6 @@ button {
   font-size: 40px;
   color: #ec495e;
   margin-top: 8%;
-  margin-bottom: 2%;
   text-align: center !important;
 }
 
@@ -152,8 +151,8 @@ button {
 }
 
 .login-input {
-  width: 40%;
-  height: 60px;
+  width: 340px;
+  height: 53px;
   border: 1px solid #595959;
   border-radius: 10px;
   margin: 2% auto;
@@ -478,7 +477,7 @@ register-links {
 .innovation-header p {
   text-align: center !important;
   font-weight: normal;
-  font-size: 27px;
+  font-size: 24px;
   color: #000000;
 }
 
@@ -542,19 +541,18 @@ register-links {
 }
 
 .login-header h1 {
-  margin-top: 6% !important;
+  margin-top: 10% !important;
 }
 
 .login-content {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 7%;
   margin-bottom: 16%;
 }
 
 .btn-login {
-  width: 24%;
+  width: 212px;
   height: 60px;
   background: #ec495e;
   border: 1px solid #ec495e;
@@ -563,9 +561,7 @@ register-links {
   font-weight: normal;
   font-size: 24px;
   color: #ffffff;
-  margin: 5% auto 3% auto;
-  /*    transition: 0.2s;
-*/
+  margin: 3% auto 3% auto;
 }
 
 .login-content input:focus {
@@ -575,7 +571,7 @@ register-links {
 .pass-forgotten {
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 22px;
   color: #ec495e;
   text-align: center;
   text-decoration: none;
@@ -696,7 +692,7 @@ register-links {
 
 .service-info {
   font-weight: normal;
-  font-size: 21px;
+  font-size: 20px;
   text-align: center;
   color: #898a9c;
   margin-top: 10%;
@@ -713,8 +709,8 @@ register-links {
 .contact-item {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  height: 215px;
+  width: 370px;
+  height: 180px;
   margin: 0 auto 5% auto;
   color: #ffffff;
   background: #ec495e;
@@ -996,8 +992,8 @@ register-links {
   color: #fafafa;
   font-weight: normal;
   font-size: 21px;
-  width: 38%;
-  height: 49px;
+  width: 333px;
+  height: 50px;
   padding: 0 1.5%;
   background-color: #ec495e;
   border-radius: 10px;
@@ -1077,7 +1073,7 @@ register-links {
 .rules-content p {
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 20px;
   color: #000000;
   text-align: left;
 }
@@ -4070,7 +4066,7 @@ register-links {
 .question h3 {
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 20px;
   color: #000;
 }
 
@@ -4103,7 +4099,7 @@ register-links {
 }
 
 .yenilik-p {
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 15px;
 }
 
@@ -4139,4 +4135,48 @@ register-links {
   margin-top: 5%;
   margin-bottom: 1%;
   text-align: center !important;
+}
+
+.header-qaydalar {
+  font-weight: 900;
+  font-size: 40px;
+  color: #ec495e;
+  margin-top: 8%;
+  text-align: center !important;
+  margin-bottom: 5%;
+}
+
+.header-suallar {
+  font-weight: 900;
+  font-size: 40px;
+  color: #ec495e;
+  margin-top: 8%;
+  text-align: center !important;
+  margin-bottom: 5%;
+}
+
+.header-haqqimizda {
+  font-weight: 900;
+  font-size: 40px;
+  color: #ec495e;
+  margin-top: 8%;
+  text-align: center !important;
+  margin-bottom: 4%;
+}
+
+.header-xidmetler {
+  font-weight: 900;
+  font-size: 40px;
+  color: #ec495e;
+  margin-top: 8%;
+  text-align: center !important;
+  margin-bottom: 4%;
+}
+
+.newpass-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 15%;
+  margin-top: 15%;
 }
