@@ -601,16 +601,12 @@ register-links {
 
 .register-input {
   width: 50%;
-  height: 75px;
+  height: 50px;
   border: 1px solid #595959;
   border-radius: 10px;
   margin-left: 6% !important;
   padding: 2%;
   font-size: 24px;
-}
-
-.city-option {
-  color: #75758b;
 }
 
 .reg-img-div {
@@ -653,7 +649,7 @@ register-links {
 }
 
 .btn-register {
-  width: 260px;
+  width: 265px;
   height: 55px;
   color: #ffffff;
   background: #ec495e;
@@ -3778,6 +3774,10 @@ register-links {
     padding-left: 0px;
   }
 
+  .yenilikler-img {
+    width: 540px !important;
+  }
+
   .nav-links {
     width: 80% !important;
   }
@@ -3816,6 +3816,7 @@ register-links {
   .yenilikler-img {
     margin-left: -11px;
     padding-bottom: 25px;
+    width: 355px !important;
   }
 
   .forgotp-p {
@@ -3922,6 +3923,10 @@ register-links {
 @media only screen and (min-width: 800px) and (max-width: 1024px) {
   .country-row h3 {
     font-size: 23px;
+  }
+
+  .yenilikler-img {
+    width: 450px !important;
   }
 
   .yenilik-img {
@@ -4157,7 +4162,7 @@ register-links {
 
 .yenilikler-cap {
   text-align: center !important;
-  font-weight: normal;
+  font-weight: bold !important;
   font-size: 27px;
   color: #000000;
   padding-bottom: 50px;
@@ -4245,4 +4250,16 @@ register-links {
 
 .elaqe-header {
   margin-top: 7% !important;
+}
+
+.price-del {
+  margin: 5px;
+}
+
+.price-span {
+  margin: 5px;
+}
+
+.yenilikler-img {
+  width: 570px;
 }
