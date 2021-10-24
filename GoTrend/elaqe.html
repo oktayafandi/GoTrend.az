@@ -73,7 +73,7 @@
         </div>
         <div class="toggle-navbar" id="toggle-navbar"><i class="fal fa-bars"></i></div>
         <div class="toggle-menu" id="toggle-menu">
-            <ul>
+            <ul class="toggle-ul">
                 <a href="tarifler.html">
                     <li>Tariflər</li>
                 </a>
@@ -107,7 +107,7 @@
 
     <section class="contact-boxes">
         <div class="login-header">
-            <h1 class="content-header">Əlaqə</h1>
+            <h1 class="content-header elaqe-header">Əlaqə</h1>
         </div>
 
         <div class="contact-content w-100">
@@ -122,10 +122,17 @@
                 <p><img class="contacticons" src="uploads/contactwp.png" alt="">+994 51 777 42 52</p>
             </div>
 
-            <div class="contact-item">
+            <div class="contact-item contact-item-work">
                 <h5>İş vaxtı</h5>
-                <p><img class="contacticons" src="uploads/oclock.png" alt="">Həftə içi - 10:00 - 20:00<br />Həftə
-                    sonu - 10:00 - 17:00</p>
+                <div class="d-flex">
+                    <div>
+                        <img class="contactitem-work" src="uploads/oclock.png" alt="">
+                    </div>
+                    <div class="work-p">
+                        <p class="time-p-1">Həftə içi - 10:00 - 20:00</p>
+                        <p class="time-p-2">Həftə sonu - 10:00 - 17:00</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -194,10 +201,11 @@
         </div>
     </footer>
 </body>
-<script src="index.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="lib/owl-carousel/owl.carousel.min.js"></script>
+<script src="question.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
