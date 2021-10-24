@@ -1990,7 +1990,7 @@ register-links {
   }
 
   .toggle-menu ul a li {
-    padding: 5px 17px;
+    padding: 5px 15px;
     border-bottom: 1px solid #dfe6e9;
     transition: 0.3s;
   }
@@ -3778,6 +3778,14 @@ register-links {
     padding-left: 0px;
   }
 
+  .nav-links {
+    width: 80% !important;
+  }
+
+  .site-logo {
+    width: 20% !important;
+  }
+
   .yenilik-p {
     font-size: 20px !important;
     margin-top: 15px !important;
@@ -3918,6 +3926,10 @@ register-links {
 
   .country-tab-controls button {
     font-size: 20px;
+  }
+
+  .nav-links {
+    width: 75% !important;
   }
 
   .kg-range {
@@ -4194,4 +4206,9 @@ register-links {
   flex-direction: column;
   margin-bottom: 15%;
   margin-top: 15%;
+}
+
+.toggle-ul {
+  list-style: none;
+  padding-left: 0px;
 }
