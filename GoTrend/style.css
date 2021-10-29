@@ -34,7 +34,6 @@ select {
 
 .activeLink {
   color: #ec495e !important;
-  font-weight: 700 !important;
 }
 
 /* .active {
@@ -108,7 +107,7 @@ select {
 }
 
 .m10 {
-  margin: 10% 0;
+  margin: 2% 0% 0% 0%;
 }
 
 .m-top-5 {
@@ -638,7 +637,7 @@ register-links {
 
 .terms-row {
   display: flex;
-  margin-top: 2% !important;
+  margin-top: 5% !important;
 }
 
 .terms-row a {
@@ -1111,15 +1110,15 @@ register-links {
 .cabinet-container {
   display: flex;
   justify-content: center;
-  padding: 7% 7% 12% 7%;
+  padding: 7% 7% 4% 7%;
 }
 
 .cabinet-sidebar {
   display: flex;
   flex-direction: column;
   padding: 3.5% 0;
-  width: 35%;
-  height: 635px;
+  width: 365px;
+  height: auto;
   float: left;
   margin-right: 5%;
   background-color: #fff5f1;
@@ -1171,20 +1170,20 @@ register-links {
 }
 
 .my-address-content {
-  width: 65% !important;
+  width: 60% !important;
   justify-content: center;
 }
 
 .country-tab-buttons {
   overflow: hidden;
   display: flex;
-  margin: 20% auto 4% auto;
+  margin: 17% auto 4% auto;
 }
 
 .country-tab-buttons button {
   cursor: pointer;
-  width: 24%;
-  height: 40px;
+  width: 158px;
+  height: 42px;
   border: 1px solid #ec495e;
   box-sizing: border-box;
   border-radius: 10px;
@@ -1209,6 +1208,10 @@ register-links {
   font-size: 18px;
   color: #373435;
   margin-bottom: 0.7%;
+}
+
+.button-country {
+  margin-right: 4%;
 }
 
 .address-info {
@@ -1242,7 +1245,7 @@ register-links {
   cursor: pointer;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background-image: url(../icons/Cab-copy.svg);
+  background-image: url(uploads/COPY.svg);
   background-repeat: no-repeat;
   background-position-x: 95%;
   background-position-y: 55%;
@@ -1289,29 +1292,35 @@ register-links {
 /*cabinet / settings*/
 
 .settings-content {
-  width: 65% !important;
-  height: 1090px;
+  width: 773px;
+  height: auto;
   justify-content: center;
-  padding: 10% 0;
+  padding: 6% 0;
+  background-color: #fff5f1;
+}
+
+.balance-container {
+  width: 60%;
+  justify-content: center;
+  padding: 6% 0;
   background-color: #fff5f1;
 }
 
 .settings-row {
-  margin-top: 4.5%;
-  width: 100% !important;
+  margin-top: 2%;
   justify-content: center;
 }
 
 .settings-input {
-  width: 42%;
-  height: 40px;
+  width: 335px;
+  height: 43px;
   border: 1px solid #595959;
   border-radius: 8px;
   font-weight: normal;
   font-size: 15px;
   color: #000000;
   padding: 0 2%;
-  margin: 0 auto;
+  margin: 8px auto;
   background-color: transparent;
 }
 
@@ -1320,11 +1329,16 @@ register-links {
   margin: 0 4%;
 }
 
+.lg-settings-input-kuryer {
+  width: 94% !important;
+  margin: 0 4%;
+}
+
 .cab-header {
   color: #000000;
   font-weight: 500;
   font-size: 21px;
-  margin: 6% 0 3% 6%;
+  margin: 8% 0 3% 4%;
 }
 
 .profile-row {
@@ -1369,10 +1383,11 @@ register-links {
 
 .settings-btn-save {
   text-decoration: none;
-  padding: 2% 4%;
   background-color: #ec495e;
   border-radius: 8px;
   font-size: 15px;
+  width: 25%;
+  height: 40px;
   color: #ffffff;
   border: none;
 }
@@ -1399,7 +1414,8 @@ register-links {
   font-weight: normal;
   font-size: 16px;
   color: #000000;
-  margin: 4.5% auto -6% 30% !important;
+  margin: 5% 0% 0% 0% !important;
+  text-align: center;
 }
 
 .chc-order {
@@ -1424,7 +1440,7 @@ register-links {
 
 .order-header {
   display: flex;
-  margin-bottom: -2%;
+  margin-top: 2%;
   font-weight: normal;
   font-size: 16px;
 }
@@ -1464,7 +1480,8 @@ register-links {
 .converter-container p {
   width: 53%;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
+  margin-bottom: 0px;
 }
 
 .converter-container p span {
@@ -1490,16 +1507,17 @@ register-links {
 .converter-content {
   margin: auto 0 auto 1%;
 }
+
 .converter-content i {
   margin-left: 3%;
 }
 
 .order-head .cab-header {
-  margin-top: 4%;
+  margin-top: 2%;
 }
 
 .order-content {
-  height: 740px;
+  height: 775px;
   padding-top: 0 !important;
 }
 
@@ -1515,24 +1533,43 @@ register-links {
 }
 
 .boxes-select {
+  text-align: center;
   width: 187.91px;
   height: 30px;
   border: 1px solid #ec495e;
+  background-color: #ec495e !important;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0 2%;
+  color: white;
+  -webkit-appearance: none;
+  background-image: url(uploads/dropiconwhite.png);
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+}
+
+.box-select-orders {
+  text-align: center;
+  width: 187.91px;
+  height: 30px;
+  border: 1px solid #ec495e;
+  background-color: #fff5f1 !important;
   border-radius: 10px;
   font-weight: 500;
   font-size: 14px;
   padding: 0 2%;
   color: #ec495e;
   -webkit-appearance: none;
-  background: #fff5f1;
-  background-image: url(../icons/Cab-sel-arrow.svg);
+  background-image: url(uploads/dropicon.png);
   background-repeat: no-repeat;
   background-position-x: 95%;
   background-position-y: 50%;
 }
 
 .my-order-header {
-  margin-left: 5%;
+  margin-left: 3%;
   font-weight: 500;
   font-size: 20px;
   color: #000000;
@@ -1549,7 +1586,7 @@ register-links {
 }
 
 .table-container table {
-  width: 100%;
+  width: 98%;
   padding-bottom: 10px;
   border-collapse: separate;
 }
@@ -1631,7 +1668,7 @@ register-links {
 
 .table-container tbody td {
   max-width: 10px;
-  padding: 15px;
+  padding: 15px 15px 15px 10px;
   background-color: transparent;
   text-align: center;
   font-weight: normal;
@@ -1643,7 +1680,7 @@ register-links {
   text-overflow: ellipsis;
 }
 
-.toolkit {
+/* .toolkit {
   text-align: center;
   display: none;
   flex-direction: column;
@@ -1652,13 +1689,45 @@ register-links {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   position: absolute;
-  right: 8.3%;
   width: 4%;
-  margin-top: -1.3%;
+  right: 21.3%;
+  z-index: 1000;
+} */
+
+.toolkit {
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  padding: 0.5%;
+  background: #fff5f1;
+  box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+  border-radius: 5px;
+  position: absolute;
+  width: 10%;
+  left: 635px;
+  z-index: 1000;
+}
+
+.toolkit-order {
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  padding: 0.5%;
+  background: #fff5f1;
+  box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+  border-radius: 5px;
+  position: absolute;
+  width: 10%;
+  left: 635px;
   z-index: 1000;
 }
 
 .toolkit p {
+  padding: 4% 2%;
+  margin: 0;
+}
+
+.toolkit-order p {
   padding: 4% 2%;
   margin: 0;
 }
@@ -1670,14 +1739,31 @@ register-links {
   transition: 0.3s;
 }
 
+.toolkit-order a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
 .toolkit a:hover,
 .toolstd:hover {
   color: #ec495e;
 }
 
+.toolkit-order a:hover,
+.toolstd-order:hover {
+  color: #ec495e;
+}
+
 .toolstd {
   position: absolute;
-  right: 7.7%;
+  left: 700px;
+}
+
+.toolstd-order {
+  position: absolute;
+  left: 700px;
 }
 
 .table-container::-webkit-scrollbar {
@@ -1701,13 +1787,13 @@ register-links {
 /*balance*/
 
 .balance-container {
-  height: 635px;
+  height: 725px;
 }
 
 .balance-row {
   display: flex;
   justify-content: space-between;
-  padding: 6% 0;
+  padding: 6% 0% 0%;
 }
 
 .balance-item {
@@ -1733,7 +1819,7 @@ register-links {
   display: flex;
   flex-direction: column;
   width: 24%;
-  height: 90px;
+  height: 100px;
   background: #ec495e;
   border-radius: 10px;
   color: #ffffff;
@@ -1779,8 +1865,8 @@ register-links {
 .balance-input {
   font-weight: normal;
   font-size: 15px;
-  width: 100%;
-  height: 38px;
+  width: 220px;
+  height: 40px;
   padding: 4%;
   border: 1px solid #595959;
   border-radius: 10px;
@@ -1802,8 +1888,8 @@ register-links {
 .balance-btn {
   font-weight: bold;
   font-size: 15px;
-  width: 43% !important;
-  height: 38px;
+  width: 220px;
+  height: 40px;
   padding: 2% 0;
   border: 1px solid #595959;
   border-radius: 10px;
@@ -1835,17 +1921,13 @@ register-links {
 
 /*declare*/
 
-.declare-btn {
-  padding: 1.5% 6%;
-}
-
 .declare-input {
   width: 25%;
-  height: 35px;
+  height: 40px;
   border: 1px solid #595959;
   border-radius: 10px;
   padding: 2%;
-  margin: 0 auto;
+  margin: 0 auto 15px;
   background-color: transparent;
   font-weight: normal;
   font-size: 14px;
@@ -1860,7 +1942,7 @@ register-links {
 .file-input {
   background: #fff5f1;
   background-repeat: no-repeat;
-  background-image: url(../icons/Cab-upload.svg);
+  background-image: url(uploads/AddDoc.svg);
   background-position-x: 95%;
   background-position-y: 50%;
 }
@@ -1924,6 +2006,11 @@ register-links {
   .sl-nav ul li,
   .register-link a {
     font-size: 13px !important;
+  }
+
+  .toolstd {
+    position: absolute;
+    left: 485px !important;
   }
 
   .header {
@@ -2374,7 +2461,7 @@ register-links {
   /*cabinet / adresses*/
 
   .cabinet-sidebar {
-    height: 280px;
+    height: auto;
     margin-bottom: 20%;
   }
 
@@ -2443,7 +2530,8 @@ register-links {
   /*cabinet / settings*/
 
   .settings-content {
-    height: 500px;
+    height: auto;
+    width: 65%;
   }
 
   .settings-input {
@@ -2452,6 +2540,14 @@ register-links {
     border-radius: 4px;
     font-size: 9px;
     padding: 0 2%;
+  }
+
+  .settings-input-kuryer {
+    width: 42% !important;
+    height: 20px !important;
+    border-radius: 4px !important;
+    font-size: 9px !important;
+    padding: 0 2% !important;
   }
 
   .cab-header {
@@ -2484,7 +2580,6 @@ register-links {
   }
 
   .settings-btn-save {
-    margin: 1% auto;
     height: 20px;
     border-radius: 4px;
     font-size: 9px;
@@ -2492,6 +2587,7 @@ register-links {
 
   .btn-change-pass {
     height: 20px;
+    width: 42%;
   }
 
   /*order*/
@@ -2505,7 +2601,7 @@ register-links {
 
   .final-amount {
     font-size: 9px;
-    margin: 3% auto -3% 30% !important;
+    margin: 3% auto -3% auto !important;
   }
 
   .chc-order {
@@ -2539,7 +2635,11 @@ register-links {
   }
 
   .order-content {
-    height: 460px;
+    height: 480px;
+    width: 65%;
+    justify-content: center;
+    padding: 6% 0;
+    background-color: #fff5f1;
   }
 
   .order-header i {
@@ -2554,7 +2654,71 @@ register-links {
   }
 
   .settings-row {
-    margin-top: 8%;
+    margin-top: 4%;
+  }
+
+  .my-order-header {
+    margin-left: 5%;
+    font-weight: 500;
+    font-size: 12px;
+    color: #000000;
+  }
+
+  .boxes-select {
+    text-align: center;
+    width: 110px;
+    height: 20px;
+    border: 1px solid #ec495e;
+    background-color: #ec495e !important;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 10px;
+    padding: 0 2%;
+    color: white;
+    -webkit-appearance: none;
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+  }
+
+  .box-select-orders {
+    text-align: center;
+    width: 110px;
+    height: 20px;
+    border: 1px solid #ec495e;
+    background-color: #fff5f1 !important;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 10px;
+    padding: 0 2%;
+    color: #ec495e;
+    -webkit-appearance: none;
+    background-image: url(uploads/);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+  }
+
+  .table-container th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 11px;
+    color: black;
+  }
+
+  .table-container tbody td {
+    max-width: 10px;
+    padding: 15px;
+    background-color: transparent;
+    text-align: center;
+    font-weight: normal;
+    font-size: 11px;
+    color: #333;
+    border-top: solid 1 px #595959;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .declare-input {
@@ -2576,7 +2740,7 @@ register-links {
   }
 
   .balance-container {
-    height: 295px;
+    height: 343px;
   }
 
   .cabinet-container {
@@ -2585,7 +2749,7 @@ register-links {
 
   .cabinet-sidebar {
     margin-right: 3%;
-    height: 295px;
+    height: auto;
   }
 
   /*balance*/
@@ -2596,6 +2760,7 @@ register-links {
 
   .balance-item p {
     font-size: 10px;
+    margin-left: 15px;
   }
 
   .balance-item span {
@@ -2621,29 +2786,12 @@ register-links {
     width: 67%;
   }
 
-  .balance-input {
-    font-size: 10px;
-    width: 100%;
-    height: 23px;
-    margin: 0 3%;
-    border-radius: 5px;
-    background-position-x: 93%;
-    background-position-y: 50%;
-  }
-
   .dollar {
     background-image: url(../icons/$-small.svg);
   }
 
   .tl {
     background-image: url(../icons/TL-small.svg);
-  }
-
-  .balance-btn {
-    font-size: 10px;
-    width: 48% !important;
-    height: 22px;
-    border-radius: 5px;
   }
 
   .tax-info {
@@ -2666,6 +2814,11 @@ register-links {
   .register-link a {
     font-size: 14px !important;
     padding: 0 6%;
+  }
+
+  .toolstd {
+    position: absolute;
+    left: 645px;
   }
 
   .header-links {
@@ -2958,11 +3111,6 @@ register-links {
 
   /*cabinet / adresses*/
 
-  .cabinet-sidebar {
-    height: 435px;
-    margin-bottom: 15%;
-  }
-
   .cabinet-sidebar img {
     margin: 0 auto 6% auto;
   }
@@ -3020,7 +3168,7 @@ register-links {
   /*cabinet / settings*/
 
   .settings-content {
-    height: 640px;
+    height: auto;
   }
 
   .settings-input {
@@ -3029,6 +3177,14 @@ register-links {
     border-radius: 6px;
     font-size: 12px;
     padding: 0 2%;
+  }
+
+  .settings-input-kuryer {
+    width: 42% !important;
+    height: 27px !important;
+    border-radius: 6px !important;
+    font-size: 12px !important;
+    padding: 0 2% !important;
   }
 
   .cab-header {
@@ -3108,7 +3264,7 @@ register-links {
   }
 
   .order-content {
-    height: 545px;
+    height: auto;
   }
 
   /*declare*/
@@ -3130,10 +3286,6 @@ register-links {
 
   .lg-declare-input {
     width: 61.5%;
-  }
-
-  .balance-container {
-    height: 435px;
   }
 
   /*balance*/
@@ -3199,6 +3351,11 @@ register-links {
   .sl-nav ul li,
   .register-link a {
     font-size: 16px !important;
+  }
+
+  .toolstd {
+    position: absolute;
+    left: 650px;
   }
 
   .register-link a {
@@ -3478,11 +3635,6 @@ register-links {
 
   /*cabinet / adresses*/
 
-  .cabinet-sidebar {
-    height: 525px;
-    margin-bottom: 31%;
-  }
-
   .cabinet-sidebar img {
     margin: 0 auto 5% auto;
   }
@@ -3539,7 +3691,7 @@ register-links {
   /*cabinet / settings*/
 
   .settings-content {
-    height: 880px;
+    height: auto;
   }
 
   .settings-input {
@@ -3548,6 +3700,14 @@ register-links {
     border-radius: 6px;
     font-size: 14px;
     padding: 0 2%;
+  }
+
+  .settings-input-kuryer {
+    width: 42% !important;
+    height: 40px !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    padding: 0 2% !important;
   }
 
   .cab-header {
@@ -3628,12 +3788,6 @@ register-links {
   }
 
   /* declare*/
-
-  .balance-container {
-    height: 525px;
-  }
-
-  /*balance*/
 
   .balance-row {
     text-align: center;
@@ -3767,10 +3921,83 @@ register-links {
 }
 
 @media only screen and (max-width: 1330px) {
+  .country-tab-buttons {
+    overflow: hidden;
+    display: flex;
+    margin: 20% auto 4% auto;
+  }
+
+  .lg-settings-input-kuryer {
+    margin: 0px 4%;
+    width: 96% !important;
+  }
+
+  .toolkit {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 0.5%;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    position: absolute;
+    width: 10%;
+    left: 630px;
+    z-index: 1000;
+  }
+
+  .toolstd {
+    position: absolute;
+    left: 685px;
+  }
+
+  .toolkit {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 0.5%;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    position: absolute;
+    width: 10%;
+    left: 620px;
+    z-index: 1000;
+  }
+
   .kg-range ul {
     list-style: none;
     margin-top: 54px;
     padding-left: 0px;
+  }
+
+  .balance-input {
+    font-weight: normal;
+    font-size: 15px;
+    width: 180px;
+    height: 40px;
+    padding: 4%;
+    border: 1px solid #595959;
+    border-radius: 10px;
+    background-color: transparent;
+    background: #fff5f1;
+    background-repeat: no-repeat;
+    background-position-x: 93%;
+    background-position-y: 50%;
+  }
+
+  .balance-btn {
+    font-weight: bold;
+    font-size: 15px;
+    width: 180px;
+    height: 40px;
+    padding: 2% 0;
+    border: 1px solid #595959;
+    border-radius: 10px;
+    background-color: #ec495e;
+    color: #ffffff;
+    border: none;
+    margin: 3% 0;
   }
 
   .yenilikler-img {
@@ -3795,10 +4022,272 @@ register-links {
   }
 }
 
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  .country-row h3 {
+    font-size: 23px;
+  }
+
+  .cashback-balance-active {
+    background-color: rgb(71, 186, 236);
+    width: 223px !important;
+    height: 120px;
+    border-radius: 10px;
+    margin-left: 155px !important;
+    margin-top: 30px !important;
+  }
+
+  .cashback-balance-red {
+    background-color: #ec495e;
+    width: 223px !important;
+    height: 120px;
+    border-radius: 10px;
+    margin-left: 155px !important;
+    margin-top: 30px !important;
+  }
+
+  .balance-input {
+    font-weight: normal;
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    padding: 4%;
+    border: 1px solid #595959;
+    border-radius: 10px;
+    background-color: transparent;
+    background: #fff5f1;
+    background-repeat: no-repeat;
+    background-position-x: 93%;
+    background-position-y: 50%;
+  }
+
+  .balance-container {
+    height: 608px;
+  }
+
+  .yenilikler-img {
+    width: 450px !important;
+  }
+
+  .yenilik-img {
+    width: 290px !important;
+  }
+
+  .contactitem-work {
+    padding: 27px 0px 0px 17px !important;
+  }
+
+  .tarif-container h2 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .country-tab-controls button {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    width: 75% !important;
+  }
+
+  .kg-range {
+    font-size: 20px;
+  }
+
+  .kg-range ul {
+    margin-top: 30%;
+  }
+
+  .kg-range ul li {
+    margin: 12% 0;
+  }
+  .prices h4 {
+    font-size: 23px;
+  }
+
+  .prices ul li {
+    font-size: 20px;
+    margin: 10% 0;
+  }
+
+  .contact-item {
+    width: 30%;
+    height: 165px;
+  }
+
+  .innovation-header p {
+    font-size: 20px;
+  }
+
+  .haqqimizda-img {
+    width: 610px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .contactitem-work {
     padding: 29px 0px 0px 17px !important;
     width: 35px !important;
+  }
+
+  .kuryer-text {
+    margin-top: 15px !important;
+    margin-left: 10px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .kuryer-text p {
+    font-size: 10px !important;
+    font-weight: bold !important;
+  }
+
+  .lg-settings-input-kuryer {
+    margin: 0px 4%;
+    width: 92% !important;
+  }
+
+  .cash-set-icons {
+    margin-top: 15px !important;
+    justify-content: space-between !important;
+    display: block !important;
+  }
+
+  .toolkit {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 0.5%;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    position: absolute;
+    width: 10%;
+    left: 440px;
+    z-index: 1000;
+  }
+
+  .toolstd-order {
+    position: absolute;
+    left: 545px;
+  }
+
+  .toolkit-order {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 0.5%;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    position: absolute;
+    width: 10%;
+    left: 490px;
+    z-index: 1000;
+  }
+
+  .cash-setting-btn {
+    margin-top: 10px !important;
+    width: 80px !important;
+    height: 25px !important;
+    background-color: #ec495e !important;
+    border: none !important;
+    border-radius: 10px !important;
+    color: white !important;
+  }
+
+  .cash-setting-cal {
+    margin: 0px 0px 0px 0px !important;
+    width: 80px !important;
+    height: 25px !important;
+    background-color: #fff5f1 !important;
+    border-radius: 10px !important;
+    border: 1px solid #595959 !important;
+    font-size: 10px !important;
+    padding: 0 8px !important;
+    background-image: url(uploads/) !important;
+    background-repeat: no-repeat !important;
+    background-position-x: 95% !important;
+    background-position-y: 55% !important;
+  }
+
+  .cash-setting-stat {
+    width: 80px !important;
+    height: 25px !important;
+    background-color: #fff5f1 !important;
+    border-radius: 10px !important;
+    border: 1px solid #595959 !important;
+    font-size: 12px !important;
+    padding: 0 8px !important;
+  }
+
+  .cashback-story-header {
+    font-size: 15px !important;
+    text-align: left !important;
+    margin-top: 25px !important;
+  }
+
+  .cashback-balance-active {
+    background-color: #47baec;
+    width: 160px !important;
+    height: 90px !important;
+    border-radius: 10px;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+  }
+
+  .cashback-balance-red {
+    background-color: #ec495e;
+    width: 160px !important;
+    height: 90px !important;
+    border-radius: 10px;
+    margin-top: 5px !important;
+    margin-right: 0px !important;
+  }
+
+  .cashback-card-content {
+    margin-top: 20px !important;
+  }
+
+  .cashback-header {
+    font-size: 14px !important;
+    text-align: center;
+  }
+
+  .declare-select {
+    width: 25% !important;
+    height: 18px !important;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #ec495e;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 8px !important;
+    padding: 0 2%;
+    color: #ec495e;
+    -webkit-appearance: none;
+    background: #fff5f1;
+    background-image: url(../icons/Cab-sel-arrow.svg) !important;
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+  }
+
+  .cabinet-container {
+    padding: 3% 3% 10%;
+  }
+
+  .cabinet-sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 3.5% 0;
+    width: 35%;
+    height: auto;
+    float: left;
+    margin-right: 5%;
+    background-color: #fff5f1;
   }
 
   .kg-range {
@@ -3917,73 +4406,22 @@ register-links {
   .yenilik-row {
     padding: 50px 0px 100px 13px;
   }
-}
 
-@media only screen and (min-width: 800px) and (max-width: 1024px) {
-  .country-row h3 {
-    font-size: 23px;
+  .balance-input {
+    font-size: 10px !important;
+    width: 100% !important;
+    height: 23px !important;
+    margin: 0 3% !important;
+    border-radius: 5px !important;
+    background-position-x: 93% !important;
+    background-position-y: 50% !important;
   }
 
-  .yenilikler-img {
-    width: 450px !important;
-  }
-
-  .yenilik-img {
-    width: 290px !important;
-  }
-
-  .contactitem-work {
-    padding: 27px 0px 0px 17px !important;
-  }
-
-  .tarif-container h2 {
-    font-weight: 700;
-    font-size: 40px;
-  }
-
-  .country-tab-controls button {
-    font-size: 20px;
-  }
-
-  .nav-links {
-    width: 75% !important;
-  }
-
-  .kg-range {
-    font-size: 20px;
-  }
-
-  .kg-range ul {
-    margin-top: 30%;
-  }
-
-  .kg-range ul li {
-    margin: 12% 0;
-  }
-  .prices h4 {
-    font-size: 23px;
-  }
-
-  .prices ul li {
-    font-size: 20px;
-    margin: 10% 0;
-  }
-
-  .contact-item {
-    width: 30%;
-    height: 165px;
-  }
-
-  .innovation-header p {
-    font-size: 20px;
-  }
-
-  .haqqimizda-img {
-    width: 610px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding-bottom: 20px;
+  .balance-btn {
+    font-size: 10px !important;
+    width: 48% !important;
+    height: 22px !important;
+    border-radius: 5px !important;
   }
 }
 
@@ -4001,6 +4439,48 @@ register-links {
   .tarif-container h2 {
     font-weight: 700;
     font-size: 35px;
+  }
+
+  .cashback-balance-red {
+    background-color: #ec495e;
+    width: 223px !important;
+    height: 120px;
+    border-radius: 10px;
+    margin-left: 90px;
+    margin-top: 30px !important;
+  }
+
+  .cashback-balance-active {
+    background-color: #47baec;
+    width: 223px !important;
+    height: 120px;
+    border-radius: 10px;
+    margin-left: 90px !important;
+    margin-top: 30px !important;
+  }
+
+  .balance-container {
+    height: 545px;
+  }
+
+  .balance-input {
+    font-weight: normal;
+    font-size: 15px;
+    width: 95px;
+    height: 40px;
+    padding: 4%;
+    border: 1px solid #595959;
+    border-radius: 10px;
+    background-color: transparent;
+    background: #fff5f1;
+    background-repeat: no-repeat;
+    background-position-x: 93%;
+    background-position-y: 50%;
+  }
+
+  .cabinet-sidebar {
+    height: auto;
+    margin-bottom: 15%;
   }
 
   .contactitem-work {
@@ -4262,4 +4742,155 @@ register-links {
 
 .yenilikler-img {
   width: 570px;
+}
+
+.cabinet-menu {
+  padding-left: 0px;
+}
+
+.cashback-balance {
+  margin-bottom: 0rem;
+}
+
+.right-arrow {
+  content: url(uploads/vektor.svg);
+}
+
+.declare-select {
+  background-color: white;
+  border: 1px solid #ec495e;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0 2%;
+  color: #ec495e;
+  -webkit-appearance: none;
+  background: #fff5f1;
+  background-image: url(uploads/dropicon.png);
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
+}
+
+.cashback-header {
+  font-size: 18px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.cashback-balance-active {
+  background-color: #47baec;
+  width: 223px !important;
+  height: 120px;
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-top: 30px !important;
+}
+
+.cashback-balance-red {
+  background-color: #ec495e;
+  width: 223px !important;
+  height: 120px;
+  border-radius: 10px;
+  margin-right: 100px;
+  margin-top: 30px !important;
+}
+
+.cashback-card-content {
+  margin-top: 30px;
+}
+
+.cashback-card-content h2 {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+}
+
+.cashback-card-content p {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+.cashback-story-header {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.cash-setting-btn {
+  width: 120px;
+  height: 30px;
+  background-color: #ec495e;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.cash-set-icons {
+  margin-top: 30px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.cash-setting-cal {
+  margin: 0px 40px 0px 0px;
+  width: 180px;
+  height: 30px;
+  background-color: #fff5f1;
+  border-radius: 10px;
+  border: 1px solid #595959;
+  font-size: 14px;
+  padding: 0 8px;
+  background-image: url(uploads/calendar.png);
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 55%;
+}
+
+.cash-setting-stat {
+  width: 122px;
+  height: 30px;
+  background-color: #fff5f1;
+  border-radius: 10px;
+  border: 1px solid #595959;
+  font-size: 14px;
+  padding: 0 8px;
+}
+
+.table-cashback {
+  margin-top: 30px;
+}
+
+.settings-input-kuryer {
+  width: 340px;
+  height: 40px;
+  border: 1px solid #595959;
+  border-radius: 8px;
+  font-weight: normal;
+  font-size: 15px;
+  color: #000000;
+  padding: 0px 2%;
+  margin: 8px auto;
+  background-color: transparent;
+}
+
+.kuryer-text {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-bottom: 60px;
+}
+
+.kuryer-text p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.kuryer-select {
+  -webkit-appearance: none;
+  background: #fff5f1;
+  background-image: url(uploads/dropicon-black.png);
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 50%;
 }

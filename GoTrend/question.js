@@ -69,6 +69,7 @@ function openFileBrowser(inputId, elementId, type) {
     else $(`#${elementId}`).val($(this).val());
   });
 }
+
 $("#tbodyturkey").on("click", ".toolstd", function () {
   clickedDivId = $(this).siblings([HTMLDivElement]).attr("id");
   $(`#${clickedDivId}`).slideToggle();
