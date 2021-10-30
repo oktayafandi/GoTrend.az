@@ -1702,9 +1702,9 @@ register-links {
   background: #fff5f1;
   box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
   border-radius: 5px;
-  position: absolute;
-  width: 10%;
-  left: 635px;
+  position: fixed;
+  width: 4%;
+  left: 1455px;
   z-index: 1000;
 }
 
@@ -3940,29 +3940,15 @@ register-links {
     background: #fff5f1;
     box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
     border-radius: 5px;
-    position: absolute;
-    width: 10%;
-    left: 630px;
+    position: fixed;
+    width: 5%;
+    left: 1150px;
     z-index: 1000;
   }
 
   .toolstd {
     position: absolute;
     left: 685px;
-  }
-
-  .toolkit {
-    text-align: center;
-    display: none;
-    flex-direction: column;
-    padding: 0.5%;
-    background: #fff5f1;
-    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
-    border-radius: 5px;
-    position: absolute;
-    width: 10%;
-    left: 620px;
-    z-index: 1000;
   }
 
   .kg-range ul {
@@ -4025,6 +4011,25 @@ register-links {
 @media only screen and (min-width: 800px) and (max-width: 1024px) {
   .country-row h3 {
     font-size: 23px;
+  }
+
+  .toolstd {
+    position: absolute;
+    left: 588px;
+  }
+
+  .toolkit {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 0.5%;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    position: fixed;
+    width: 5%;
+    left: 880px;
+    z-index: 1000;
   }
 
   .cashback-balance-active {
@@ -4163,12 +4168,11 @@ register-links {
     background: #fff5f1;
     box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
     border-radius: 5px;
-    position: absolute;
-    width: 10%;
-    left: 440px;
+    position: fixed;
+    width: 15%;
+    left: 300px;
     z-index: 1000;
   }
-
   .toolstd-order {
     position: absolute;
     left: 545px;
@@ -4441,6 +4445,25 @@ register-links {
     font-size: 35px;
   }
 
+  .toolstd {
+    position: absolute;
+    left: 585px;
+  }
+
+  .toolkit {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 0.5%;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    position: fixed;
+    width: 9%;
+    left: 665px;
+    z-index: 1000;
+  }
+
   .cashback-balance-red {
     background-color: #ec495e;
     width: 223px !important;
@@ -4547,6 +4570,13 @@ register-links {
   }
   .kg-range ul li {
     margin: 14% 0;
+  }
+}
+
+@media only screen and (min-width: 1023) and (max-width: 1365) {
+  .toolstd {
+    position: absolute;
+    left: 590px;
   }
 }
 
