@@ -159,7 +159,7 @@ button {
   padding: 2%;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 17px;
 }
 
 /*site header*/
@@ -558,7 +558,7 @@ register-links {
   border-radius: 10px;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 22px;
   color: #ffffff;
   margin: 3% auto 3% auto;
 }
@@ -605,7 +605,7 @@ register-links {
   border-radius: 10px;
   margin-left: 6% !important;
   padding: 2%;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .reg-img-div {
@@ -1078,7 +1078,7 @@ register-links {
 .rules-content p {
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
   text-align: left;
 }
@@ -1414,13 +1414,13 @@ register-links {
   font-weight: normal;
   font-size: 16px;
   color: #000000;
-  margin: 5% 0% 0% 0% !important;
+  margin: 5% 0% 1% 0% !important;
   text-align: center;
 }
 
 .chc-order {
-  width: 5%;
-  height: 30px;
+  width: 3%;
+  height: 29px;
   border: 1px solid #595959;
   border-radius: 8px;
   margin: auto 1.5%;
@@ -1662,7 +1662,7 @@ register-links {
   padding: 12px 15px;
   text-align: left;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 13px;
   color: black;
 }
 
@@ -1712,13 +1712,11 @@ register-links {
   text-align: center;
   display: none;
   flex-direction: column;
-  padding: 0.5%;
   background: #fff5f1;
   box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
   border-radius: 5px;
-  position: absolute;
-  width: 10%;
-  left: 635px;
+  position: fixed;
+  width: 4%;
   z-index: 1000;
 }
 
@@ -2010,7 +2008,7 @@ register-links {
 
   .toolstd {
     position: absolute;
-    left: 485px !important;
+    left: 600px !important;
   }
 
   .header {
@@ -2084,10 +2082,11 @@ register-links {
 
   /*footer-content*/
   .footer-content {
+    padding-left: 0px !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .footer-links {
@@ -2110,7 +2109,7 @@ register-links {
 
   .social-networks div {
     justify-content: space-around;
-    width: 33px;
+    width: 32px;
     line-height: 29px;
   }
 
@@ -2601,7 +2600,7 @@ register-links {
 
   .final-amount {
     font-size: 9px;
-    margin: 3% auto -3% auto !important;
+    margin: 3% auto 1% auto !important;
   }
 
   .chc-order {
@@ -3927,6 +3926,24 @@ register-links {
     margin: 20% auto 4% auto;
   }
 
+  .toolstd-order {
+    position: absolute;
+    left: 682px;
+  }
+
+  .toolkit-order {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    position: fixed;
+    right: 120px;
+    width: 4%;
+    z-index: 1000;
+  }
+
   .lg-settings-input-kuryer {
     margin: 0px 4%;
     width: 96% !important;
@@ -4011,6 +4028,24 @@ register-links {
 @media only screen and (min-width: 800px) and (max-width: 1024px) {
   .country-row h3 {
     font-size: 23px;
+  }
+
+  .toolstd-order {
+    position: absolute;
+    left: 645px;
+  }
+
+  .toolkit-order {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    position: fixed;
+    right: 90px;
+    width: 7%;
+    z-index: 1000;
   }
 
   .toolstd {
@@ -4138,6 +4173,25 @@ register-links {
     width: 35px !important;
   }
 
+  .mobile-img {
+    display: block !important;
+    margin-top: 26px;
+  }
+
+  .logo {
+    width: 155px;
+    height: 80px;
+    margin-top: 15px;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+
+  .calculator-img {
+    display: none;
+  }
+
   .kuryer-text {
     margin-top: 15px !important;
     margin-left: 10px !important;
@@ -4186,12 +4240,11 @@ register-links {
     background: #fff5f1;
     box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
     border-radius: 5px;
-    position: absolute;
-    width: 10%;
-    left: 490px;
+    position: fixed;
+    width: 13%;
     z-index: 1000;
+    right: 20px;
   }
-
   .cash-setting-btn {
     margin-top: 10px !important;
     width: 80px !important;
@@ -4339,12 +4392,12 @@ register-links {
     align-items: center;
   }
 
-  .footer-logo {
-    margin-left: -10px;
-  }
-
   .country-row h3 {
     font-size: 10px;
+  }
+
+  .footer-social-li {
+    margin: 15px 8px 15px 25px;
   }
 
   .country-tab-controls button {
@@ -4443,6 +4496,24 @@ register-links {
   .tarif-container h2 {
     font-weight: 700;
     font-size: 35px;
+  }
+
+  .toolstd-order {
+    position: absolute;
+    left: 650px;
+  }
+
+  .toolkit-order {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    position: fixed;
+    right: 15px;
+    width: 9%;
+    z-index: 1000;
   }
 
   .toolstd {
@@ -4626,7 +4697,7 @@ register-links {
 .question h3 {
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 19px;
   color: #000;
 }
 
@@ -4923,4 +4994,12 @@ register-links {
   background-repeat: no-repeat;
   background-position-x: 95%;
   background-position-y: 50%;
+}
+
+.time-clock {
+  margin: 6% 6% 0 1% !important;
+}
+
+.mobile-img {
+  display: none;
 }

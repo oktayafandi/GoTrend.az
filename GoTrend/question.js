@@ -93,3 +93,27 @@ function hideToolkits(id) {
     else toolkits[i].style.display = "block";
   }
 }
+
+$("#tbodyturkey").on("click", ".toolstd-order", function () {
+  clickedDivId = $(this).siblings([HTMLDivElement]).attr("id");
+  $(`#${clickedDivId}`).slideToggle();
+  hideToolkits(clickedDivId);
+});
+$("#tbodyusa").on("click", ".toolstd-order", function () {
+  clickedDivId = $(this).siblings([HTMLDivElement]).attr("id");
+  $(`#${clickedDivId}`).slideToggle();
+  hideToolkits(clickedDivId);
+});
+$("#tbodychine").on("click", ".toolstd-order", function () {
+  clickedDivId = $(this).siblings([HTMLDivElement]).attr("id");
+  $(`#${clickedDivId}`).slideToggle();
+  hideToolkits(clickedDivId);
+});
+function hideToolkits(id) {
+  var toolkits = document.getElementsByClassName("toolkit-order");
+  for (var i = 0; i < toolkits.length; i++) {
+    if (toolkits[i].attributes["id"].nodeValue !== id)
+      toolkits[i].style.display = "none";
+    else toolkits[i].style.display = "block";
+  }
+}

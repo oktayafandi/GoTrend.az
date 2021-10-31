@@ -132,7 +132,21 @@
                     <select class="settings-input-kuryer kuryer-select" id="">
                         <option>Bağlama</option>
                     </select>
-                    <input class="settings-input" placeholder="Tarif" />
+                    <select class="settings-input-kuryer kuryer-select" id="">
+                        <option disabled selected hidden>Tarif</option>
+                        <option>Binəqədi rayonu</option>
+                        <option>Qaradağ rayonu</option>
+                        <option>Xəzər rayonu</option>
+                        <option>Səbail rayonu</option>
+                        <option>Sabunçu rayonu</option>
+                        <option>Suraxanı rayonu</option>
+                        <option>Nərimanov rayonu</option>
+                        <option>Nəsimi rayonu</option>
+                        <option>Nizami rayonu</option>
+                        <option>Pirallahı rayonu</option>
+                        <option>Xətai rayonu</option>
+                        <option>Yasamal rayonu</option>
+                    </select>
                 </div>
 
                 <div class="settings-row d-flex">
@@ -142,7 +156,16 @@
 
                 <div class="settings-row d-flex">
                     <select class="settings-input-kuryer kuryer-select" id="">
-                        <option>Telefon</option>
+                        <option disabled selected hidden>Telefon</option>
+                        <option>+994 50</option>
+                        <option>+994 51</option>
+                        <option>+994 10</option>
+                        <option>+994 55</option>
+                        <option>+994 99</option>
+                        <option>+994 70</option>
+                        <option>+994 77</option>
+                        <option>+994 60</option>
+                        <option>+994 12</option>
                     </select>
                     <input class="settings-input-kuryer" placeholder="Nömrənizi qeyd edin" />
                 </div>
@@ -158,6 +181,11 @@
                 </div>
 
                 <div class="text-center m5">
+                    <div class="final-amount">
+                        <span>Məbləğ: </span>
+                        <span id="final-price">0₼</span>
+                    </div>
+
                     <button class="settings-btn-save" onclick="SaveUserData()">Təsdiq et</button>
                 </div>
             </div>
