@@ -125,7 +125,7 @@ button {
 
 .content-header {
   font-weight: 900;
-  font-size: 40px;
+  font-size: 36px;
   color: #ec495e;
   margin-top: 8%;
   text-align: center !important;
@@ -171,7 +171,7 @@ button {
   background-color: #cdd9ef33;
   padding: 0 8%;
   height: 65px;
-  font-size: 17px !important;
+  font-size: 16px !important;
   color: #000000;
   font-weight: 400;
 }
@@ -331,7 +331,7 @@ register-links {
   align-items: center;
   background-color: #fff2ee;
   padding: 2% 13% 2% 8%;
-  font-size: 21px;
+  font-size: 18px;
   color: #000000;
   font-weight: 400;
   height: 80px;
@@ -767,7 +767,7 @@ register-links {
   position: relative;
   text-align: center;
   font-weight: 800;
-  font-size: 46px;
+  font-size: 40px;
   color: #ffffff;
   top: 6%;
   bottom: 6%;
@@ -897,7 +897,7 @@ register-links {
 .calculator-row select,
 .calculator-input {
   width: 50%;
-  height: 60px;
+  height: 55px;
   border: 2px solid #ec4953;
   font-size: 20px;
   padding-left: 2%;
@@ -964,7 +964,7 @@ register-links {
 
 .d-innovation-content p {
   font-weight: 500;
-  font-size: 28px;
+  font-size: 23px;
   color: #000000;
 }
 
