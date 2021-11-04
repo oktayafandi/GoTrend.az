@@ -14,6 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- ________________________________ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!-- ________________________________ -->
 </head>
 
 <body>
@@ -153,9 +159,10 @@
 
                 <div class="cash-set-icons">
                     <div>
-                        <input class="cash-setting-cal" readonly value="Zaman aralığı">
+                        <input class="cash-setting-cal" type="text" name="daterange" readonly
+                            value="11/01/2021 - 11/04/2021" />
 
-                        <select class="cash-setting-stat">
+                        <select class=" cash-setting-stat">
                             <option disabled selected hidden>Status</option>
                             <option>Gözləmədə</option>
                             <option>Yoxlamada</option>
@@ -170,7 +177,7 @@
                 </div>
 
                 <div class="table-container table-cashback">
-                    <table cellpadding="0" cellspacing="0">
+                    <table cellpadding="0" cellspacing="0" class="cashback-table">
                         <thead>
                             <tr>
                                 <th>Tarix</th>
@@ -271,8 +278,17 @@
     </footer>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script>
+    $(function () {
+        $('input[name="daterange"]').daterangepicker({
+            opens: 'left'
+        }, function (start, end, label) {
+            console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+        });
+    });
+</script>
+
 <script src="lib/owl-carousel/owl.carousel.min.js"></script>
 <script src="question.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

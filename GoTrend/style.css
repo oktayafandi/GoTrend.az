@@ -2064,7 +2064,7 @@ register-links {
     position: absolute;
     left: 0;
     font-size: 15px;
-    margin-top: 380px;
+    margin-top: 360px;
     background: #fff;
     z-index: 1000;
   }
@@ -3977,7 +3977,7 @@ register-links {
   .balance-input {
     font-weight: normal;
     font-size: 15px;
-    width: 180px;
+    width: 160px;
     height: 40px;
     padding: 4%;
     border: 1px solid #595959;
@@ -3992,7 +3992,113 @@ register-links {
   .balance-btn {
     font-weight: bold;
     font-size: 15px;
-    width: 180px;
+    width: 160px;
+    height: 40px;
+    padding: 2% 0;
+    border: 1px solid #595959;
+    border-radius: 10px;
+    background-color: #ec495e;
+    color: #ffffff;
+    border: none;
+    margin: 3% 0;
+  }
+
+  .yenilikler-img {
+    width: 540px !important;
+  }
+
+  .nav-links {
+    width: 80% !important;
+  }
+
+  .site-logo {
+    width: 20% !important;
+  }
+
+  .yenilik-p {
+    font-size: 20px !important;
+    margin-top: 15px !important;
+  }
+
+  .yenilik-img {
+    width: 360px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .country-tab-buttons {
+    overflow: hidden;
+    display: flex;
+    margin: 20% auto 4% auto;
+  }
+
+  .toolstd-order {
+    position: absolute;
+    left: 682px;
+  }
+
+  .toolkit-order {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    position: fixed;
+    right: 120px;
+    width: 4%;
+    z-index: 1000;
+  }
+
+  .lg-settings-input-kuryer {
+    margin: 0px 4%;
+    width: 96% !important;
+  }
+
+  .toolkit {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 0.5%;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    position: fixed;
+    width: 5%;
+    left: 1150px;
+    z-index: 1000;
+  }
+
+  .toolstd {
+    position: absolute;
+    left: 685px;
+  }
+
+  .kg-range ul {
+    list-style: none;
+    margin-top: 54px;
+    padding-left: 0px;
+  }
+
+  .balance-input {
+    font-weight: normal;
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    padding: 4%;
+    border: 1 px solid #595959;
+    border-radius: 10px;
+    background-color: transparent;
+    background: #fff5f1;
+    background-repeat: no-repeat;
+    background-position-x: 93%;
+    background-position-y: 50%;
+  }
+
+  .balance-btn {
+    font-weight: bold;
+    font-size: 15px;
+    width: 150px;
     height: 40px;
     padding: 2% 0;
     border: 1px solid #595959;
@@ -4368,7 +4474,7 @@ register-links {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 12px !important;
   }
 
   .prices ul li {
@@ -4936,7 +5042,7 @@ register-links {
 
 .cash-setting-cal {
   margin: 0px 40px 0px 0px;
-  width: 180px;
+  width: 200px;
   height: 30px;
   background-color: #fff5f1;
   border-radius: 10px;
@@ -5002,4 +5108,8 @@ register-links {
 
 .mobile-img {
   display: none;
+}
+
+.cashback-table {
+  width: 100% !important;
 }
