@@ -1785,7 +1785,7 @@ register-links {
 /*balance*/
 
 .balance-container {
-  height: 725px;
+  height: 773px;
 }
 
 .balance-row {
@@ -5112,4 +5112,8 @@ register-links {
 
 .cashback-table {
   width: 100% !important;
+}
+
+.btn-declare:hover {
+  color: #ffffff;
 }
