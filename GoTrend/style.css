@@ -4194,7 +4194,7 @@ register-links {
   .balance-input {
     font-weight: normal;
     font-size: 15px;
-    width: 150px;
+    width: 145px;
     height: 40px;
     padding: 4%;
     border: 1px solid #595959;
@@ -5116,4 +5116,12 @@ register-links {
 
 .btn-declare:hover {
   color: #ffffff;
+}
+
+.nav-phone {
+  color: black;
+}
+
+.nav-phone:hover {
+  color: #ec495e;
 }
