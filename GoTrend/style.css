@@ -1863,7 +1863,7 @@ register-links {
 .balance-input {
   font-weight: normal;
   font-size: 15px;
-  width: 220px;
+  width: 195px;
   height: 40px;
   padding: 4%;
   border: 1px solid #595959;
@@ -1886,7 +1886,7 @@ register-links {
 .balance-btn {
   font-weight: bold;
   font-size: 15px;
-  width: 220px;
+  width: 195px;
   height: 40px;
   padding: 2% 0;
   border: 1px solid #595959;
