@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!------------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css">
+    <!------------------>
 </head>
 
 <body>
@@ -131,10 +140,18 @@
                 </div>
 
                 <div class="settings-row d-flex">
-                    <select class="settings-input-kuryer kuryer-select" id="">
-                        <option>Bağlama</option>
-                    </select>
-                    <select class="settings-input-kuryer kuryer-select" id="">
+                    <div class="multi_select_box">
+                        <select class="multi_select" multiple>
+                            <option>Bağlama Turkey</option>
+                            <option>Bağlama America</option>
+                            <option>Bağlama China</option>
+                            <option>Bağlama China</option>
+                            <option>Bağlama China</option>
+                            <option>Bağlama China</option>
+                        </select>
+                    </div>
+
+                    <select class="settings-input-kuryer kuryer-select tarif">
                         <option disabled selected hidden>Tarif</option>
                         <option>Binəqədi rayonu</option>
                         <option>Qaradağ rayonu</option>
@@ -250,8 +267,16 @@
         </div>
     </footer>
 </body>
+
+
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!------------------>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
+<!---------------- -->
+
 <script src="lib/owl-carousel/owl.carousel.min.js"></script>
 <script src="question.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

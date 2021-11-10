@@ -117,3 +117,7 @@ function hideToolkits(id) {
     else toolkits[i].style.display = "block";
   }
 }
+
+$(document).ready(function () {
+  $(".multi_select").selectpicker();
+});

@@ -95,7 +95,7 @@ select {
 }
 
 .m5 {
-  margin: 5% 0;
+  margin: 5% 0% 2% 0%;
 }
 
 .m3 {
@@ -359,11 +359,11 @@ register-links {
 
 .partnertext {
   margin-top: 10px;
-  font-family: "Andada Pro", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .nav-links {
-  width: 78% !important;
+  width: 80% !important;
 }
 
 .nav-links ul li {
@@ -860,6 +860,13 @@ register-links {
   width: 100%;
 }
 
+.calculator-content-phone {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
 .calculator-content span {
   margin-top: 3%;
   margin-bottom: 5%;
@@ -921,6 +928,10 @@ register-links {
   color: #c4c4c4;
 }
 
+.section5 {
+  margin-bottom: 50px;
+}
+
 .btn-calculate {
   border-radius: 15px;
   width: 20%;
@@ -938,7 +949,7 @@ register-links {
   display: flex;
   justify-content: space-around;
   padding: 5%;
-  margin-top: -4%;
+  margin-top: -5%;
 }
 
 .d-innovation-img {
@@ -1325,12 +1336,12 @@ register-links {
 }
 
 .lg-settings-input {
-  width: 100% !important;
-  margin: 0 4%;
+  width: 93% !important;
+  margin: 0 3%;
 }
 
 .lg-settings-input-kuryer {
-  width: 94% !important;
+  width: 95% !important;
   margin: 0 4%;
 }
 
@@ -1586,7 +1597,7 @@ register-links {
 }
 
 .table-container table {
-  width: 98%;
+  width: 100%;
   padding-bottom: 10px;
   border-collapse: separate;
 }
@@ -1680,7 +1691,7 @@ register-links {
   text-overflow: ellipsis;
 }
 
-/* .toolkit {
+.toolkit {
   text-align: center;
   display: none;
   flex-direction: column;
@@ -1689,12 +1700,13 @@ register-links {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   position: absolute;
+  right: 8.3%;
   width: 4%;
-  right: 21.3%;
+  margin-top: -1.3%;
   z-index: 1000;
-} */
+}
 
-.toolkit {
+/* .toolkit {
   text-align: center;
   display: none;
   flex-direction: column;
@@ -1706,17 +1718,20 @@ register-links {
   width: 4%;
   left: 1455px;
   z-index: 1000;
-}
+} */
 
 .toolkit-order {
   text-align: center;
   display: none;
   flex-direction: column;
+  padding: 0.5%;
   background: #fff5f1;
-  box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  position: fixed;
+  position: absolute;
+  right: 8.3%;
   width: 4%;
+  margin-top: -1.3%;
   z-index: 1000;
 }
 
@@ -1756,12 +1771,12 @@ register-links {
 
 .toolstd {
   position: absolute;
-  left: 700px;
+  right: 7.7%;
 }
 
 .toolstd-order {
   position: absolute;
-  left: 700px;
+  right: 7.7%;
 }
 
 .table-container::-webkit-scrollbar {
@@ -1830,10 +1845,6 @@ register-links {
   font-size: 20px;
 }
 
-.partner-logo {
-  padding: 15px;
-}
-
 .cashback span {
   font-weight: 400;
   font-size: 14px;
@@ -1863,7 +1874,7 @@ register-links {
 .balance-input {
   font-weight: normal;
   font-size: 15px;
-  width: 195px;
+  width: 190px;
   height: 40px;
   padding: 4%;
   border: 1px solid #595959;
@@ -1886,7 +1897,7 @@ register-links {
 .balance-btn {
   font-weight: bold;
   font-size: 15px;
-  width: 195px;
+  width: 190px;
   height: 40px;
   padding: 2% 0;
   border: 1px solid #595959;
@@ -2006,9 +2017,36 @@ register-links {
     font-size: 13px !important;
   }
 
+  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 85px !important;
+  }
+
+  .bootstrap-select > .dropdown-toggle.bs-placeholder,
+  .bootstrap-select > .dropdown-toggle.bs-placeholder:active,
+  .bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
+  .bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
+    color: #fff5f1;
+    height: 20px;
+    right: 10px;
+  }
+
+  .bootstrap-select > .dropdown-toggle.bs-placeholder,
+  .bootstrap-select > .dropdown-toggle.bs-placeholder:active,
+  .bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
+  .bootstrap-select > .dropdown-toggle.bs-placeholder:hover {
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+
+  .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+    overflow: hidden;
+    font-size: 6px;
+    padding: -22px;
+  }
+
   .toolstd {
     position: absolute;
-    left: 600px !important;
+    right: 3.5%;
   }
 
   .header {
@@ -2064,7 +2102,7 @@ register-links {
     position: absolute;
     left: 0;
     font-size: 15px;
-    margin-top: 360px;
+    margin-top: 340px;
     background: #fff;
     z-index: 1000;
   }
@@ -2086,7 +2124,7 @@ register-links {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .footer-links {
@@ -2109,8 +2147,8 @@ register-links {
 
   .social-networks div {
     justify-content: space-around;
-    width: 32px;
-    line-height: 29px;
+    width: 28px;
+    line-height: 23px;
   }
 
   .social-networks div i {
@@ -2118,7 +2156,7 @@ register-links {
   }
 
   .footer-contact {
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 10% auto;
   }
 
@@ -2128,8 +2166,8 @@ register-links {
 
   /*innovation*/
   .content-header {
-    font-size: 24px;
-    margin-top: 8%;
+    font-size: 20px !important;
+    margin-top: 8% !important;
   }
 
   .innovation-header p {
@@ -2360,11 +2398,12 @@ register-links {
 
   .calculator-row select,
   .calculator-input {
-    width: 50% !important;
-    height: 25px;
-    border: 1px solid #ec4953;
-    font-size: 11px;
+    width: 100% !important;
+    height: 35px;
+    border: 2px solid #ec4953;
+    font-size: 12px;
     margin: 0 2%;
+    border-radius: 10px;
   }
 
   .calculator-row select {
@@ -2373,9 +2412,9 @@ register-links {
 
   .btn-calculate {
     border-radius: 15px;
-    width: 30%;
-    height: 25px;
-    font-size: 11px;
+    width: 148px;
+    height: 39px;
+    font-size: 14px;
   }
 
   /*d-innovation*/
@@ -2390,11 +2429,6 @@ register-links {
 
   .d-innovation-content p {
     font-size: 12px;
-  }
-
-  .d-innovation-content a {
-    margin-top: 4%;
-    font-size: 10px;
   }
 
   /*rules*/
@@ -2422,7 +2456,7 @@ register-links {
 
   .shop-filter-content input,
   .shop-filter-content select {
-    font-size: 13px;
+    font-size: 12px;
     width: 45%;
     height: 30px;
     border-radius: 6px;
@@ -2815,11 +2849,6 @@ register-links {
     padding: 0 6%;
   }
 
-  .toolstd {
-    position: absolute;
-    left: 645px;
-  }
-
   .header-links {
     width: 43%;
   }
@@ -3178,9 +3207,13 @@ register-links {
     padding: 0 2%;
   }
 
+  .tarif {
+    margin-left: 40px;
+  }
+
   .settings-input-kuryer {
     width: 42% !important;
-    height: 27px !important;
+    height: 39px !important;
     border-radius: 6px !important;
     font-size: 12px !important;
     padding: 0 2% !important;
@@ -3352,9 +3385,8 @@ register-links {
     font-size: 16px !important;
   }
 
-  .toolstd {
-    position: absolute;
-    left: 650px;
+  .tarif {
+    margin-left: 45px;
   }
 
   .register-link a {
@@ -3701,6 +3733,14 @@ register-links {
     padding: 0 2%;
   }
 
+  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 235px !important;
+  }
+
+  .tarif {
+    margin-left: 48px !important;
+  }
+
   .settings-input-kuryer {
     width: 42% !important;
     height: 40px !important;
@@ -3841,6 +3881,10 @@ register-links {
   }
 }
 
+.tarif {
+  margin-left: 54px !important;
+}
+
 .tarif-content {
   padding: 0 6% 10% 6%;
 }
@@ -3926,46 +3970,17 @@ register-links {
     margin: 20% auto 4% auto;
   }
 
-  .toolstd-order {
-    position: absolute;
-    left: 682px;
+  .tarif {
+    margin-left: 30px !important;
   }
 
-  .toolkit-order {
-    text-align: center;
-    display: none;
-    flex-direction: column;
-    background: #fff5f1;
-    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
-    border-radius: 5px;
-    position: fixed;
-    right: 120px;
-    width: 4%;
-    z-index: 1000;
+  .multi_select {
+    margin-left: 15px !important;
   }
 
   .lg-settings-input-kuryer {
     margin: 0px 4%;
     width: 96% !important;
-  }
-
-  .toolkit {
-    text-align: center;
-    display: none;
-    flex-direction: column;
-    padding: 0.5%;
-    background: #fff5f1;
-    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
-    border-radius: 5px;
-    position: fixed;
-    width: 5%;
-    left: 1150px;
-    z-index: 1000;
-  }
-
-  .toolstd {
-    position: absolute;
-    left: 685px;
   }
 
   .kg-range ul {
@@ -4032,46 +4047,9 @@ register-links {
     margin: 20% auto 4% auto;
   }
 
-  .toolstd-order {
-    position: absolute;
-    left: 682px;
-  }
-
-  .toolkit-order {
-    text-align: center;
-    display: none;
-    flex-direction: column;
-    background: #fff5f1;
-    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
-    border-radius: 5px;
-    position: fixed;
-    right: 120px;
-    width: 4%;
-    z-index: 1000;
-  }
-
   .lg-settings-input-kuryer {
     margin: 0px 4%;
-    width: 96% !important;
-  }
-
-  .toolkit {
-    text-align: center;
-    display: none;
-    flex-direction: column;
-    padding: 0.5%;
-    background: #fff5f1;
-    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
-    border-radius: 5px;
-    position: fixed;
-    width: 5%;
-    left: 1150px;
-    z-index: 1000;
-  }
-
-  .toolstd {
-    position: absolute;
-    left: 685px;
+    width: 92% !important;
   }
 
   .kg-range ul {
@@ -4134,43 +4112,6 @@ register-links {
 @media only screen and (min-width: 800px) and (max-width: 1024px) {
   .country-row h3 {
     font-size: 23px;
-  }
-
-  .toolstd-order {
-    position: absolute;
-    left: 645px;
-  }
-
-  .toolkit-order {
-    text-align: center;
-    display: none;
-    flex-direction: column;
-    background: #fff5f1;
-    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
-    border-radius: 5px;
-    position: fixed;
-    right: 90px;
-    width: 7%;
-    z-index: 1000;
-  }
-
-  .toolstd {
-    position: absolute;
-    left: 588px;
-  }
-
-  .toolkit {
-    text-align: center;
-    display: none;
-    flex-direction: column;
-    padding: 0.5%;
-    background: #fff5f1;
-    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
-    border-radius: 5px;
-    position: fixed;
-    width: 5%;
-    left: 880px;
-    z-index: 1000;
   }
 
   .cashback-balance-active {
@@ -4244,7 +4185,7 @@ register-links {
   }
 
   .kg-range ul li {
-    margin: 12% 0;
+    margin: 11.5% 0;
   }
   .prices h4 {
     font-size: 23px;
@@ -4274,6 +4215,78 @@ register-links {
 }
 
 @media only screen and (max-width: 500px) {
+  .calculator-container-phone {
+    display: block !important;
+  }
+
+  .partner-img {
+    width: 120px;
+  }
+
+  .partner-logo {
+    padding: 15px;
+    width: 50% !important;
+  }
+
+  .col-news {
+    width: 50% !important;
+  }
+
+  .marca-img {
+    width: 60px;
+  }
+
+  .text-center-cal-ph {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ec4953;
+    font-weight: bold;
+  }
+
+  .calculator-container {
+    display: none;
+  }
+
+  .toolkit {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 0.5%;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    position: absolute;
+    right: 5.3%;
+    width: 10%;
+    margin-top: -1.3%;
+    z-index: 1000;
+  }
+
+  .tarif {
+    margin-left: 9px !important;
+  }
+
+  .toolstd-order {
+    position: absolute;
+    right: 3.5%;
+  }
+
+  .toolkit-order {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 0.5%;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    position: absolute;
+    right: 5.3%;
+    width: 10%;
+    margin-top: -1.3%;
+    z-index: 1000;
+  }
+
   .contactitem-work {
     padding: 29px 0px 0px 17px !important;
     width: 35px !important;
@@ -4320,37 +4333,6 @@ register-links {
     display: block !important;
   }
 
-  .toolkit {
-    text-align: center;
-    display: none;
-    flex-direction: column;
-    padding: 0.5%;
-    background: #fff5f1;
-    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
-    border-radius: 5px;
-    position: fixed;
-    width: 15%;
-    left: 300px;
-    z-index: 1000;
-  }
-  .toolstd-order {
-    position: absolute;
-    left: 545px;
-  }
-
-  .toolkit-order {
-    text-align: center;
-    display: none;
-    flex-direction: column;
-    padding: 0.5%;
-    background: #fff5f1;
-    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
-    border-radius: 5px;
-    position: fixed;
-    width: 13%;
-    z-index: 1000;
-    right: 20px;
-  }
   .cash-setting-btn {
     margin-top: 10px !important;
     width: 80px !important;
@@ -4558,12 +4540,8 @@ register-links {
   }
 
   .yenilik-img {
-    width: 350px;
-  }
-
-  .yenilik-p {
-    font-size: 20px !important;
-    margin-top: 10px !important;
+    width: 165px;
+    margin-bottom: 10px;
   }
 
   .yenilik-row {
@@ -4596,6 +4574,36 @@ register-links {
     align-items: center;
     padding-bottom: 20px;
   }
+
+  .yenilik-img-prom {
+    display: none;
+  }
+
+  .yenilik-header {
+    font-size: 16px !important;
+  }
+
+  .yenilik-p {
+    font-size: 10px !important;
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .d-innovation-content p,
+  .d-innovation-content h3 {
+    padding-left: 0%;
+    text-align: left !important;
+    margin-bottom: 7%;
+  }
+
+  .d-innovation-content a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #37474f;
+    padding-left: 0%;
+    margin-top: -5%;
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 500px) {
@@ -4604,41 +4612,10 @@ register-links {
     font-size: 35px;
   }
 
-  .toolstd-order {
-    position: absolute;
-    left: 650px;
-  }
-
-  .toolkit-order {
-    text-align: center;
-    display: none;
-    flex-direction: column;
-    background: #fff5f1;
-    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
-    border-radius: 5px;
-    position: fixed;
-    right: 15px;
-    width: 9%;
-    z-index: 1000;
-  }
-
-  .toolstd {
-    position: absolute;
-    left: 585px;
-  }
-
-  .toolkit {
-    text-align: center;
-    display: none;
-    flex-direction: column;
-    padding: 0.5%;
-    background: #fff5f1;
-    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
-    border-radius: 5px;
-    position: fixed;
-    width: 9%;
-    left: 665px;
-    z-index: 1000;
+  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 170px !important;
+    margin-left: 20px !important;
+    height: 27px !important;
   }
 
   .cashback-balance-red {
@@ -4742,7 +4719,7 @@ register-links {
 @media only screen and (min-width: 1700px) {
   .kg-range ul {
     list-style: none;
-    margin-top: 75px;
+    margin-top: 75px !important;
     padding-left: 0px;
   }
   .kg-range ul li {
@@ -4750,10 +4727,139 @@ register-links {
   }
 }
 
-@media only screen and (min-width: 1023) and (max-width: 1365) {
+@media only screen and (min-width: 1440px) {
   .toolstd {
     position: absolute;
-    left: 590px;
+    right: 9.5%;
+  }
+
+  .site-logo {
+    width: 10%;
+  }
+
+  .nav-links {
+    width: 70%;
+  }
+
+  .kg-range ul {
+    list-style: none;
+    margin-top: 60px;
+    padding-left: 0;
+  }
+
+  .toolstd-order {
+    position: absolute;
+    right: 9.5%;
+  }
+
+  .table-container table {
+    width: 99%;
+    padding-bottom: 10px;
+    border-collapse: separate;
+  }
+
+  .toolkit {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 0.5%;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5 px;
+    position: absolute;
+    right: 10.5%;
+    width: 4%;
+    margin-top: -1.3%;
+    z-index: 1000;
+  }
+
+  .toolkit-order {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 0.5%;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5 px;
+    position: absolute;
+    right: 10%;
+    width: 4%;
+    margin-top: -1.3%;
+    z-index: 1000;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .kg-range ul {
+    list-style: none;
+    margin-top: 65px;
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (min-width: 1340px) {
+  .kg-range ul {
+    list-style: none;
+    margin-top: 60px;
+    padding-left: 0px;
+  }
+
+  .tarif {
+    margin-left: 30px !important;
+  }
+
+  .multi_select {
+    width: 340px !important;
+    margin-top: 8px;
+    margin-left: 17px !important;
+  }
+}
+
+@media only screen and (min-width: 1850px) {
+  .toolstd {
+    position: absolute;
+    right: 19%;
+  }
+
+  .toolstd-order {
+    position: absolute;
+    left: 71.2%;
+  }
+
+  .table-container table {
+    width: 99%;
+    padding-bottom: 10px;
+    border-collapse: separate;
+  }
+
+  .toolkit {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 0.5%;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5 px;
+    position: absolute;
+    right: 19.5%;
+    width: 4%;
+    margin-top: -1.3%;
+    z-index: 1000;
+  }
+
+  .toolkit-order {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 0.5%;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5 px;
+    position: absolute;
+    right: 19.5%;
+    width: 4%;
+    margin-top: -1.3%;
+    z-index: 1000;
   }
 }
 
@@ -4838,6 +4944,7 @@ register-links {
 .yenilik-p {
   font-size: 20px;
   margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 .forgotp-p {
@@ -4852,7 +4959,6 @@ register-links {
   font-weight: bold !important;
   font-size: 27px;
   color: #000000;
-  padding-bottom: 50px;
 }
 
 .yenilikler-p1 {
@@ -4921,6 +5027,7 @@ register-links {
 .toggle-ul {
   list-style: none;
   padding-left: 0px;
+  margin-bottom: 0rem;
 }
 
 .time-p-1 {
@@ -5124,4 +5231,45 @@ register-links {
 
 .nav-phone:hover {
   color: #ec495e;
+}
+
+/* .bootstrap-select > .dropdown-toggle {
+  position: relative;
+  width: 340px !important;
+  background-color: transparent;
+  margin: 8px auto;
+  text-align: right;
+  white-space: nowrap;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+} */
+
+.multi_select_box button {
+  background-color: #fff5f1;
+  border: 1px solid #595959;
+  border-radius: 8px;
+}
+
+.multi_select {
+  width: 340px !important;
+  margin-top: 8px;
+  margin-left: 25px;
+}
+
+.section6 {
+  margin-top: 30px;
+}
+
+.calculator-container-phone {
+  display: none;
 }
