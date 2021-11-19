@@ -27,9 +27,8 @@
         <div class="header">
             <div>
                 <div class="phone d-flex">
-                    <a href=""></a><img src="uploads/telephoneicon.svg" alt=""><span class="nav-phone"
-                        href="tel:+994125384252">+994
-                        12 538 42 52</span>
+                    <a href="tel:+994125384252"><img src="uploads/telephoneicon.svg" alt=""><span class="nav-phone">+994
+                            12 538 42 52</span></a>
                 </div>
             </div>
             <div class="header-links">
@@ -66,9 +65,11 @@
     </header>
 
     <nav class="site-navbar">
+        <div class="toggle-navbar" id="toggle-navbar"><i class="fal fa-bars"></i></div>
         <div class="site-logo">
             <a href="homepage.html"><img class="logo-small" src="uploads/Logo.png" /></a>
         </div>
+
         <div class="nav-links" id="navbar">
             <ul>
                 <li><a href="tarifler.html">Tariflər</a></li>
@@ -79,9 +80,39 @@
                 <li><a href=""><img src="uploads/navicon.svg" alt=""></li>
             </ul>
         </div>
-        <div class="toggle-navbar" id="toggle-navbar"><i class="fal fa-bars"></i></div>
+
+        <!--<ul class="mobile-nonreg-menu">
+            <li><img src="uploads/navicon.svg" alt="" style="width: 15px;"></li>
+            <li>
+                <a href="login.html" style=" margin-left: 13px;"><button
+                        style="border-radius: 5px; background-color: transparent; font-size: 14px; padding: 1px 4px 1px 4px; border: 1px solid;">Daxil
+                        ol</button></a>
+            </li>
+        </ul> -->
+
+        <ul class="mobile-reg-menu">
+            <li><a href="" style="font-size: 12px; text-decoration: none; color: black;">Sifariş et</a></li>
+            <li><img src="uploads/navicon.svg" alt="" style="width: 15px; margin-left: 9px;"></li>
+            <li>
+                <img src="uploads/person-pp.png" style="margin-left: 9px;" alt="">
+            </li>
+            <li>
+                <div class="toggle-navbar-reg" id="toggle-navbar-reg"><i class="fas fa-ellipsis-v"
+                        style="font-size: 15px;"></i></div>
+            </li>
+        </ul>
+
         <div class="toggle-menu" id="toggle-menu">
             <ul class="toggle-ul">
+                <li style="margin-top: 12px; margin-left: 200px;">
+                    <div class="toggle-navbar2" id="toggle-navbar2"><img src="uploads/closeicon.png" alt=""></div>
+                </li>
+                <li class="register-link-mob"><a href="register.html" style="color: #ffffff !important;">Qeydiyyat</a>
+                </li>
+                <li class="login-link-mob"><a href="login.html">Daxil ol</a></li>
+                <li style="padding: 8px 12px;"><a href="tel:+994125384252"><img src="uploads/telephoneicon.svg" alt=""
+                            style="width: 15px;"><span class="nav-phone" style="font-size: 11px;">+994 12 538 42
+                            52</span></a></li>
                 <a href="tarifler.html">
                     <li>Tariflər</li>
                 </a>
@@ -97,9 +128,6 @@
                 <a href="elaqe.html">
                     <li>Əlaqə</li>
                 </a>
-                <a href="">
-                    <li><img src="uploads/navicon.svg" alt=""></li>
-                </a>
                 <a href="qaydalar.html">
                     <li>Qaydalar</li>
                 </a>
@@ -111,7 +139,43 @@
                 </a>
             </ul>
         </div>
+
+        <div class="toggle-menu-reg" id="toggle-menu-reg">
+            <ul class="toggle-ul">
+                <li class="register-link-mob reg-btn-mob"><a href="beyanet.html"
+                        style="color: #ffffff !important;">Bəyan et</a></li>
+
+                <a href="unvanlarim.html">
+                    <li>Xaricdəki ünvanlarım</li>
+                </a>
+                <a href="baglamalarim.html">
+                    <li>Bağlamalarım</li>
+                </a>
+                <a href="menimuchunal.html">
+                    <li>Mənim üçün al</li>
+                </a>
+                <a href="sifarishlerim.html">
+                    <li>Sifarişlərim</li>
+                </a>
+                <a href="kuryer.html">
+                    <li>Kuryer</li>
+                </a>
+                <a href="balans.html">
+                    <li>Balans</li>
+                </a>
+                <a href="cashback.html">
+                    <li>Cashback</li>
+                </a>
+                <a href="tenzimlemeler.html">
+                    <li>Tənzimləmələr</li>
+                </a>
+                <a href="login.html">
+                    <li>Çıxış</li>
+                </a>
+            </ul>
+        </div>
     </nav>
+
 
     <section>
         <div class="cabinet-container w-100">
@@ -208,6 +272,96 @@
                     <button class="settings-btn-save" onclick="SaveUserData()">Təsdiq et</button>
                 </div>
             </div>
+
+            <div class="settings-content-phone">
+                <div>
+                    <h3 class="cab-header"
+                        style="text-align: center; color: #EC4953; font-size: 18px; font-weight: bold; margin-bottom: 5%;">
+                        Kuryer sifariş
+                        et</h3>
+                </div>
+
+                <div class="settings-row d-flex" style="justify-content: space-between; width: 320px;">
+                    <div class="multi_select_box">
+                        <select class="multi_select" multiple>
+                            <option>Bağlama Turkey</option>
+                            <option>Bağlama America</option>
+                            <option>Bağlama China</option>
+                            <option>Bağlama China</option>
+                            <option>Bağlama China</option>
+                            <option>Bağlama China</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="settings-row d-flex">
+                    <select class="settings-input-kuryer-phone kuryer-select">
+                        <option disabled selected hidden>Tarif</option>
+                        <option>Binəqədi rayonu</option>
+                        <option>Qaradağ rayonu</option>
+                        <option>Xəzər rayonu</option>
+                        <option>Səbail rayonu</option>
+                        <option>Sabunçu rayonu</option>
+                        <option>Suraxanı rayonu</option>
+                        <option>Nərimanov rayonu</option>
+                        <option>Nəsimi rayonu</option>
+                        <option>Nizami rayonu</option>
+                        <option>Pirallahı rayonu</option>
+                        <option>Xətai rayonu</option>
+                        <option>Yasamal rayonu</option>
+                    </select>
+                </div>
+
+                <div class="settings-row d-flex">
+                    <input class="settings-input-kuryer-phone" placeholder="Ünvan" />
+                </div>
+
+                <div class="settings-row d-flex">
+                    <input class="settings-input-kuryer-phone" placeholder="Təhvil alacaq şəxs" />
+                </div>
+
+
+
+                <div class="settings-row d-flex">
+                    <select class="settings-input-kuryer-phone kuryer-select" id="">
+                        <option disabled selected hidden>Telefon</option>
+                        <option>+994 50</option>
+                        <option>+994 51</option>
+                        <option>+994 10</option>
+                        <option>+994 55</option>
+                        <option>+994 99</option>
+                        <option>+994 70</option>
+                        <option>+994 77</option>
+                        <option>+994 60</option>
+                        <option>+994 12</option>
+                    </select>
+                </div>
+
+                <div class="settings-row d-flex">
+                    <input class="settings-input-kuryer-phone" placeholder="Nömrənizi qeyd edin" />
+                </div>
+
+
+                <div class="settings-row d-flex">
+                    <input class="settings-input-kuryer-phone" placeholder="Əlavə qeyd" />
+                </div>
+
+                <div class="kuryer-text">
+                    <p>Kuryer sifarişləri 24 saat ərzində təyin olunur. <br>
+                        Kuryerin iş saatları 10:00-20:00 (həftənin 7 günü)
+                    </p>
+                </div>
+
+                <div class="text-center m5">
+                    <div class="final-amount">
+                        <span>Məbləğ: </span>
+                        <span id="final-price">0₼</span>
+                    </div>
+
+                    <button class="settings-btn-save" onclick="SaveUserData()">Təsdiq et</button>
+                </div>
+            </div>
+
         </div>
     </section>
 

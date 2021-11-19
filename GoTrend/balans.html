@@ -21,9 +21,8 @@
         <div class="header">
             <div>
                 <div class="phone d-flex">
-                    <a href=""></a><img src="uploads/telephoneicon.svg" alt=""><span class="nav-phone"
-                        href="tel:+994125384252">+994
-                        12 538 42 52</span>
+                    <a href="tel:+994125384252"><img src="uploads/telephoneicon.svg" alt=""><span class="nav-phone">+994
+                            12 538 42 52</span></a>
                 </div>
             </div>
             <div class="header-links">
@@ -60,9 +59,11 @@
     </header>
 
     <nav class="site-navbar">
+        <div class="toggle-navbar" id="toggle-navbar"><i class="fal fa-bars"></i></div>
         <div class="site-logo">
             <a href="homepage.html"><img class="logo-small" src="uploads/Logo.png" /></a>
         </div>
+
         <div class="nav-links" id="navbar">
             <ul>
                 <li><a href="tarifler.html">Tariflər</a></li>
@@ -73,9 +74,39 @@
                 <li><a href=""><img src="uploads/navicon.svg" alt=""></li>
             </ul>
         </div>
-        <div class="toggle-navbar" id="toggle-navbar"><i class="fal fa-bars"></i></div>
+
+        <!--<ul class="mobile-nonreg-menu">
+            <li><img src="uploads/navicon.svg" alt="" style="width: 15px;"></li>
+            <li>
+                <a href="login.html" style=" margin-left: 13px;"><button
+                        style="border-radius: 5px; background-color: transparent; font-size: 14px; padding: 1px 4px 1px 4px; border: 1px solid;">Daxil
+                        ol</button></a>
+            </li>
+        </ul> -->
+
+        <ul class="mobile-reg-menu">
+            <li><a href="" style="font-size: 12px; text-decoration: none; color: black;">Sifariş et</a></li>
+            <li><img src="uploads/navicon.svg" alt="" style="width: 15px; margin-left: 9px;"></li>
+            <li>
+                <img src="uploads/person-pp.png" style="margin-left: 9px;" alt="">
+            </li>
+            <li>
+                <div class="toggle-navbar-reg" id="toggle-navbar-reg"><i class="fas fa-ellipsis-v"
+                        style="font-size: 15px;"></i></div>
+            </li>
+        </ul>
+
         <div class="toggle-menu" id="toggle-menu">
             <ul class="toggle-ul">
+                <li style="margin-top: 12px; margin-left: 200px;">
+                    <div class="toggle-navbar2" id="toggle-navbar2"><img src="uploads/closeicon.png" alt=""></div>
+                </li>
+                <li class="register-link-mob"><a href="register.html" style="color: #ffffff !important;">Qeydiyyat</a>
+                </li>
+                <li class="login-link-mob"><a href="login.html">Daxil ol</a></li>
+                <li style="padding: 8px 12px;"><a href="tel:+994125384252"><img src="uploads/telephoneicon.svg" alt=""
+                            style="width: 15px;"><span class="nav-phone" style="font-size: 11px;">+994 12 538 42
+                            52</span></a></li>
                 <a href="tarifler.html">
                     <li>Tariflər</li>
                 </a>
@@ -91,9 +122,6 @@
                 <a href="elaqe.html">
                     <li>Əlaqə</li>
                 </a>
-                <a href="">
-                    <li><img src="uploads/navicon.svg" alt=""></li>
-                </a>
                 <a href="qaydalar.html">
                     <li>Qaydalar</li>
                 </a>
@@ -105,10 +133,46 @@
                 </a>
             </ul>
         </div>
+
+        <div class="toggle-menu-reg" id="toggle-menu-reg">
+            <ul class="toggle-ul">
+                <li class="register-link-mob reg-btn-mob"><a href="beyanet.html"
+                        style="color: #ffffff !important;">Bəyan et</a></li>
+
+                <a href="unvanlarim.html">
+                    <li>Xaricdəki ünvanlarım</li>
+                </a>
+                <a href="baglamalarim.html">
+                    <li>Bağlamalarım</li>
+                </a>
+                <a href="menimuchunal.html">
+                    <li>Mənim üçün al</li>
+                </a>
+                <a href="sifarishlerim.html">
+                    <li>Sifarişlərim</li>
+                </a>
+                <a href="kuryer.html">
+                    <li>Kuryer</li>
+                </a>
+                <a href="balans.html">
+                    <li>Balans</li>
+                </a>
+                <a href="cashback.html">
+                    <li>Cashback</li>
+                </a>
+                <a href="tenzimlemeler.html">
+                    <li>Tənzimləmələr</li>
+                </a>
+                <a href="login.html">
+                    <li>Çıxış</li>
+                </a>
+            </ul>
+        </div>
     </nav>
 
+
     <section class="balans-section">
-        <div class="cabinet-container w-100">
+        <div class="cabinet-container w-100 balans-cabinet">
             <div id="cabinet-sidebar" class="cabinet-sidebar text-center">
                 <img src="uploads/userpp.png" />
                 <h3>Maleyka Aslanova</h3>
@@ -164,6 +228,58 @@
                         <div class="d-flex space-between">
                             <button type="button" class="balance-btn">Balansı artır</button>
                             <button type="button" class="balance-btn">Balansı artır</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tax-info">
+                    <p>Diqqət!</p>
+                    <span>Bir ay ərzində $300-dan yuxarı gətirilən mallara əlavə gömrük vergisi tətbiq edilir.</span>
+                </div>
+            </div>
+
+            <div class="settings-content-phone balance-container">
+                <h2 style="font-size: 18px; color: #EC4953; text-align: center; margin-top: 35px; font-weight: bold;">
+                    Balans</h2>
+
+                <div class="balance-row">
+                    <div class="balance-item">
+                        <p>Cari ay üzrə</p>
+                        <span>0.00 $</span>
+                    </div>
+                    <div class="balance-item">
+                        <p>Daşınma balansı</p>
+                        <span>0.00 $</span>
+                    </div>
+                    <div class="balance-item">
+                        <p>Sifariş balansı</p>
+                        <span>0.00 TL</span>
+                    </div>
+                </div>
+
+                <div class="p5 align-center">
+                    <div class="cashback-balance-red col-lg-6 col-md-12 col-sm-12"
+                        style="width: 162px !important; height: 100px !important; margin: auto !important; margin-top: 30px !important; margin-bottom: 25px !important;">
+                        <div class="balance-card-content">
+                            <h2>0 $</h2>
+                            <p>Cashback balansı</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="balance-cnt-phone"
+                    style="width: auto; height: 155px; background-color: #FFF5F1; margin-top: 30px;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6" style="margin-top: 30px; margin-left: 35px; width: 40% !important;">
+                                <input type="text" class="balance-input-dollar" placeholder="Məbləğ" />
+                                <input type="text" class="balance-input-tl" placeholder="Məbləğ" />
+                            </div>
+
+                            <div class="col-6" style="margin-top: 25px; width: 40% !important;">
+                                <button type="button" class="balance-btn">Balansı artır</button>
+                                <button type="button" class="balance-btn">Balansı artır</button>
+                            </div>
                         </div>
                     </div>
                 </div>

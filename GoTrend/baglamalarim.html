@@ -18,9 +18,8 @@
         <div class="header">
             <div>
                 <div class="phone d-flex">
-                    <a href=""></a><img src="uploads/telephoneicon.svg" alt=""><span class="nav-phone"
-                        href="tel:+994125384252">+994
-                        12 538 42 52</span>
+                    <a href="tel:+994125384252"><img src="uploads/telephoneicon.svg" alt=""><span class="nav-phone">+994
+                            12 538 42 52</span></a>
                 </div>
             </div>
             <div class="header-links">
@@ -57,9 +56,11 @@
     </header>
 
     <nav class="site-navbar">
+        <div class="toggle-navbar" id="toggle-navbar"><i class="fal fa-bars"></i></div>
         <div class="site-logo">
             <a href="homepage.html"><img class="logo-small" src="uploads/Logo.png" /></a>
         </div>
+
         <div class="nav-links" id="navbar">
             <ul>
                 <li><a href="tarifler.html">Tariflər</a></li>
@@ -70,9 +71,39 @@
                 <li><a href=""><img src="uploads/navicon.svg" alt=""></li>
             </ul>
         </div>
-        <div class="toggle-navbar" id="toggle-navbar"><i class="fal fa-bars"></i></div>
+
+        <!--<ul class="mobile-nonreg-menu">
+            <li><img src="uploads/navicon.svg" alt="" style="width: 15px;"></li>
+            <li>
+                <a href="login.html" style=" margin-left: 13px;"><button
+                        style="border-radius: 5px; background-color: transparent; font-size: 14px; padding: 1px 4px 1px 4px; border: 1px solid;">Daxil
+                        ol</button></a>
+            </li>
+        </ul> -->
+
+        <ul class="mobile-reg-menu">
+            <li><a href="" style="font-size: 12px; text-decoration: none; color: black;">Sifariş et</a></li>
+            <li><img src="uploads/navicon.svg" alt="" style="width: 15px; margin-left: 9px;"></li>
+            <li>
+                <img src="uploads/person-pp.png" style="margin-left: 9px;" alt="">
+            </li>
+            <li>
+                <div class="toggle-navbar-reg" id="toggle-navbar-reg"><i class="fas fa-ellipsis-v"
+                        style="font-size: 15px;"></i></div>
+            </li>
+        </ul>
+
         <div class="toggle-menu" id="toggle-menu">
             <ul class="toggle-ul">
+                <li style="margin-top: 12px; margin-left: 200px;">
+                    <div class="toggle-navbar2" id="toggle-navbar2"><img src="uploads/closeicon.png" alt=""></div>
+                </li>
+                <li class="register-link-mob"><a href="register.html" style="color: #ffffff !important;">Qeydiyyat</a>
+                </li>
+                <li class="login-link-mob"><a href="login.html">Daxil ol</a></li>
+                <li style="padding: 8px 12px;"><a href="tel:+994125384252"><img src="uploads/telephoneicon.svg" alt=""
+                            style="width: 15px;"><span class="nav-phone" style="font-size: 11px;">+994 12 538 42
+                            52</span></a></li>
                 <a href="tarifler.html">
                     <li>Tariflər</li>
                 </a>
@@ -88,9 +119,6 @@
                 <a href="elaqe.html">
                     <li>Əlaqə</li>
                 </a>
-                <a href="">
-                    <li><img src="uploads/navicon.svg" alt=""></li>
-                </a>
                 <a href="qaydalar.html">
                     <li>Qaydalar</li>
                 </a>
@@ -102,7 +130,43 @@
                 </a>
             </ul>
         </div>
+
+        <div class="toggle-menu-reg" id="toggle-menu-reg">
+            <ul class="toggle-ul">
+                <li class="register-link-mob reg-btn-mob"><a href="beyanet.html"
+                        style="color: #ffffff !important;">Bəyan et</a></li>
+
+                <a href="unvanlarim.html">
+                    <li>Xaricdəki ünvanlarım</li>
+                </a>
+                <a href="baglamalarim.html">
+                    <li>Bağlamalarım</li>
+                </a>
+                <a href="menimuchunal.html">
+                    <li>Mənim üçün al</li>
+                </a>
+                <a href="sifarishlerim.html">
+                    <li>Sifarişlərim</li>
+                </a>
+                <a href="kuryer.html">
+                    <li>Kuryer</li>
+                </a>
+                <a href="balans.html">
+                    <li>Balans</li>
+                </a>
+                <a href="cashback.html">
+                    <li>Cashback</li>
+                </a>
+                <a href="tenzimlemeler.html">
+                    <li>Tənzimləmələr</li>
+                </a>
+                <a href="login.html">
+                    <li>Çıxış</li>
+                </a>
+            </ul>
+        </div>
     </nav>
+
 
     <section class="balans-section">
         <div class="cabinet-container w-100">
@@ -377,6 +441,144 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="boxes-content settings-content-phone">
+                <h3 class="cab-header" style="text-align: center; color: #EC4953; font-size: 18px; font-weight: bold;">
+                    Bağlamalarım</h3>
+
+                <div class="country-tab-buttons boxes-tab-buttons">
+                    <button class="tab-link active-tab-page"
+                        onclick="changeTab(event, 'Turkey', 'active-tab-page', 'tab-page-content')">Türkiyə</button>
+                    <button class="tab-link"
+                        onclick="changeTab(event, 'USA', 'active-tab-page', 'tab-page-content')">ABŞ</button>
+                    <button class="tab-link"
+                        onclick="changeTab(event, 'China', 'active-tab-page', 'tab-page-content')">Çin</button>
+                </div>
+
+                <div class="tab-container d-flex">
+                    <div id="Turkey" style="display:block !important;" class="tab-page-content">
+                        <select class="boxes-select box-select-orders">
+                            <option disabled selected hidden>Bütün bağlamalar</option>
+                            <option>Bütün bağlamalar (0)</option>
+                            <option>Xarici anbar (0)</option>
+                            <option>Yoldadır (0)</option>
+                            <option>Yerli anbar (0)</option>
+                            <option>Təhvil verildi (0)</option>
+                            <option>Bəyan olunmayanlar (0)</option>
+                            <option>Gömrük (0)</option>
+                        </select>
+
+                        <div class="boxes-list">
+                            <ul class="cashback-list-ul">
+                                <li class="cashback-list-li">Mağaza</li>
+                                <li class="cashback-list-li">Smart ID / Tracking ID</li>
+                                <li class="cashback-list-li">Status</li>
+                                <li class="cashback-list-li">Çəki</li>
+                                <li class="cashback-list-li">Çatdırılma</li>
+                                <li class="cashback-list-li">Ödəmə</li>
+                            </ul>
+
+                            <ul class="cashback-list-ul">
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                            </ul>
+                        </div>
+
+                        <div class="pagenation">
+                            <span><img src="uploads/left-pn.svg" alt=""></span>
+                            <span class="pagenation-num"> 1 </span>
+                            <span><img src="uploads/right-pn.svg" alt=""></span>
+                        </div>
+                    </div>
+
+                    <div id="USA" class="tab-page-content">
+                        <select class="boxes-select box-select-orders">
+                            <option disabled selected hidden>Bütün bağlamalar</option>
+                            <option>Bütün bağlamalar (0)</option>
+                            <option>Xarici anbar (0)</option>
+                            <option>Yoldadır (0)</option>
+                            <option>Yerli anbar (0)</option>
+                            <option>Təhvil verildi (0)</option>
+                            <option>Bəyan olunmayanlar (0)</option>
+                            <option>Gömrük (0)</option>
+                        </select>
+
+                        <div class="boxes-list">
+                            <ul class="cashback-list-ul">
+                                <li class="cashback-list-li">Tarix </li>
+                                <li class="cashback-list-li">Mağaza</li>
+                                <li class="cashback-list-li">Sifariş</li>
+                                <li class="cashback-list-li">Məbləğ</li>
+                                <li class="cashback-list-li">Faiz</li>
+                                <li class="cashback-list-li">Cashback</li>
+                                <li class="cashback-list-li">Status</li>
+                            </ul>
+
+                            <ul class="cashback-list-ul">
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                            </ul>
+                        </div>
+
+                        <div class="pagenation">
+                            <span><img src="uploads/left-pn.svg" alt=""></span>
+                            <span class="pagenation-num"> 1 </span>
+                            <span><img src="uploads/right-pn.svg" alt=""></span>
+                        </div>
+                    </div>
+
+                    <div id="China" class="tab-page-content">
+                        <select class="boxes-select box-select-orders">
+                            <option disabled selected hidden>Bütün bağlamalar</option>
+                            <option>Bütün bağlamalar (0)</option>
+                            <option>Xarici anbar (0)</option>
+                            <option>Yoldadır (0)</option>
+                            <option>Yerli anbar (0)</option>
+                            <option>Təhvil verildi (0)</option>
+                            <option>Bəyan olunmayanlar (0)</option>
+                            <option>Gömrük (0)</option>
+                        </select>
+
+                        <div class="boxes-list">
+                            <ul class="cashback-list-ul">
+                                <li class="cashback-list-li">Tarix </li>
+                                <li class="cashback-list-li">Mağaza</li>
+                                <li class="cashback-list-li">Sifariş</li>
+                                <li class="cashback-list-li">Məbləğ</li>
+                                <li class="cashback-list-li">Faiz</li>
+                                <li class="cashback-list-li">Cashback</li>
+                                <li class="cashback-list-li">Status</li>
+                            </ul>
+
+                            <ul class="cashback-list-ul">
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                                <li class="cashback-list-li">Value</li>
+                            </ul>
+                        </div>
+
+                        <div class="pagenation">
+                            <span><img src="uploads/left-pn.svg" alt=""></span>
+                            <span class="pagenation-num"> 1 </span>
+                            <span><img src="uploads/right-pn.svg" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

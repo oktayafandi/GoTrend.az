@@ -9,9 +9,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="lib/owl-carousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="lib/owl-carousel/assets/owlcarousel/owl.theme.default.min.css">
+    <!-- ------------ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
         integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ------------ -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,16 +86,16 @@
             </ul>
         </div>
 
-        <ul class="mobile-nonreg-menu">
+        <!--<ul class="mobile-nonreg-menu">
             <li><img src="uploads/navicon.svg" alt="" style="width: 15px;"></li>
             <li>
                 <a href="login.html" style=" margin-left: 13px;"><button
                         style="border-radius: 5px; background-color: transparent; font-size: 14px; padding: 1px 4px 1px 4px; border: 1px solid;">Daxil
                         ol</button></a>
             </li>
-        </ul>
+        </ul> -->
 
-        <!--<ul class="mobile-reg-menu">
+        <ul class="mobile-reg-menu">
             <li><a href="" style="font-size: 12px; text-decoration: none; color: black;">Sifariş et</a></li>
             <li><img src="uploads/navicon.svg" alt="" style="width: 15px; margin-left: 9px;"></li>
             <li>
@@ -97,7 +105,7 @@
                 <div class="toggle-navbar-reg" id="toggle-navbar-reg"><i class="fas fa-ellipsis-v"
                         style="font-size: 15px;"></i></div>
             </li>
-        </ul> -->
+        </ul>
 
         <div class="toggle-menu" id="toggle-menu">
             <ul class="toggle-ul">
@@ -139,8 +147,11 @@
 
         <div class="toggle-menu-reg" id="toggle-menu-reg">
             <ul class="toggle-ul">
+                <li class="register-link-mob reg-btn-mob"><a href="beyanet.html"
+                        style="color: #ffffff !important;">Bəyan et</a></li>
+
                 <a href="unvanlarim.html">
-                    <li style="margin-top: 15px;">Xaricdəki ünvanlarım</li>
+                    <li>Xaricdəki ünvanlarım</li>
                 </a>
                 <a href="baglamalarim.html">
                     <li>Bağlamalarım</li>
@@ -173,7 +184,7 @@
     <main>
         <section class="section1">
             <img src="uploads/mainpic1.png" class="w-100 desktop-img" />
-            <img src="uploads/mainpic-phone.png" class="w-100 mobile-img" />
+            <img src="uploads/mainpic-phone.svg" class="w-100 mobile-img" />
         </section>
 
         <section class="section2">
@@ -424,24 +435,59 @@
             <div class="container">
                 <div class="row partners owl-carousel owl-theme">
                     <div class=" activee">
-                        <a href=""><img class="marca-img" src="uploads/trendyol.png" alt=""></a>
+                        <div class="partner-card">
+                            <div class="card-body">
+                                <img class="card-img-top" src="uploads/koton2.png">
+                                <p class="card-text">5.05%</p>
+                                <p class="card-text-cashback">Kəşbək</p>
+                            </div>
+                        </div>
                     </div>
                     <div class=" activee">
-                        <a href=""><img class="marca-img" src="uploads/zara.png" alt=""></a>
+                        <div class="partner-card">
+                            <div class="card-body">
+                                <img class="card-img-top" src="uploads/koton2.png">
+                                <p class="card-text">5.05%</p>
+                                <p class="card-text-cashback">Kəşbək</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="activee">
-                        <a href=""><img class="marca-img" src="uploads/mango.png" alt=""></a>
+                    <div class=" activee">
+                        <div class="partner-card">
+                            <div class="card-body">
+                                <img class="card-img-top" src="uploads/koton2.png">
+                                <p class="card-text">5.05%</p>
+                                <p class="card-text-cashback">Kəşbək</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="activee">
-                        <a href=""><img class="marca-img" src="uploads/koton.png" alt=""></a>
+                    <div class=" activee">
+                        <div class="partner-card">
+                            <div class="card-body">
+                                <img class="card-img-top" src="uploads/koton2.png">
+                                <p class="card-text">5.05%</p>
+                                <p class="card-text-cashback">Kəşbək</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="activee">
-                        <a href=""><img class="marca-img" src="uploads/koton.png" alt=""></a>
+                    <div class=" activee">
+                        <div class="partner-card">
+                            <div class="card-body">
+                                <img class="card-img-top" src="uploads/koton2.png">
+                                <p class="card-text">5.05%</p>
+                                <p class="card-text-cashback">Kəşbək</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="activee">
-                        <a href=""><img class="marca-img" src="uploads/koton.png" alt=""></a>
+                    <div class=" activee">
+                        <div class="partner-card">
+                            <div class="card-body">
+                                <img class="card-img-top" src="uploads/koton2.png">
+                                <p class="card-text">5.05%</p>
+                                <p class="card-text-cashback">Kəşbək</p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -518,15 +564,18 @@
 
 <script type="text/javascript">
     $('.variable-width').slick({
+        speed: 400,
         slidesToShow: 4,
         GamepadButton: false,
         responsive: [
             {
                 breakpoint: 480,
                 settings: {
-                    speed: 400,
+                    infinite: false,
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    dots: true,
+
                 }
             }
         ]

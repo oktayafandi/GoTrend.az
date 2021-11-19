@@ -21,9 +21,8 @@
         <div class="header">
             <div>
                 <div class="phone d-flex">
-                    <a href=""></a><img src="uploads/telephoneicon.svg" alt=""><span class="nav-phone"
-                        href="tel:+994125384252">+994
-                        12 538 42 52</span>
+                    <a href="tel:+994125384252"><img src="uploads/telephoneicon.svg" alt=""><span class="nav-phone">+994
+                            12 538 42 52</span></a>
                 </div>
             </div>
             <div class="header-links">
@@ -60,9 +59,11 @@
     </header>
 
     <nav class="site-navbar">
+        <div class="toggle-navbar" id="toggle-navbar"><i class="fal fa-bars"></i></div>
         <div class="site-logo">
             <a href="homepage.html"><img class="logo-small" src="uploads/Logo.png" /></a>
         </div>
+
         <div class="nav-links" id="navbar">
             <ul>
                 <li><a href="tarifler.html">Tariflər</a></li>
@@ -73,9 +74,39 @@
                 <li><a href=""><img src="uploads/navicon.svg" alt=""></li>
             </ul>
         </div>
-        <div class="toggle-navbar" id="toggle-navbar"><i class="fal fa-bars"></i></div>
+
+        <!--<ul class="mobile-nonreg-menu">
+            <li><img src="uploads/navicon.svg" alt="" style="width: 15px;"></li>
+            <li>
+                <a href="login.html" style=" margin-left: 13px;"><button
+                        style="border-radius: 5px; background-color: transparent; font-size: 14px; padding: 1px 4px 1px 4px; border: 1px solid;">Daxil
+                        ol</button></a>
+            </li>
+        </ul> -->
+
+        <ul class="mobile-reg-menu">
+            <li><a href="" style="font-size: 12px; text-decoration: none; color: black;">Sifariş et</a></li>
+            <li><img src="uploads/navicon.svg" alt="" style="width: 15px; margin-left: 9px;"></li>
+            <li>
+                <img src="uploads/person-pp.png" style="margin-left: 9px;" alt="">
+            </li>
+            <li>
+                <div class="toggle-navbar-reg" id="toggle-navbar-reg"><i class="fas fa-ellipsis-v"
+                        style="font-size: 15px;"></i></div>
+            </li>
+        </ul>
+
         <div class="toggle-menu" id="toggle-menu">
             <ul class="toggle-ul">
+                <li style="margin-top: 12px; margin-left: 200px;">
+                    <div class="toggle-navbar2" id="toggle-navbar2"><img src="uploads/closeicon.png" alt=""></div>
+                </li>
+                <li class="register-link-mob"><a href="register.html" style="color: #ffffff !important;">Qeydiyyat</a>
+                </li>
+                <li class="login-link-mob"><a href="login.html">Daxil ol</a></li>
+                <li style="padding: 8px 12px;"><a href="tel:+994125384252"><img src="uploads/telephoneicon.svg" alt=""
+                            style="width: 15px;"><span class="nav-phone" style="font-size: 11px;">+994 12 538 42
+                            52</span></a></li>
                 <a href="tarifler.html">
                     <li>Tariflər</li>
                 </a>
@@ -91,9 +122,6 @@
                 <a href="elaqe.html">
                     <li>Əlaqə</li>
                 </a>
-                <a href="">
-                    <li><img src="uploads/navicon.svg" alt=""></li>
-                </a>
                 <a href="qaydalar.html">
                     <li>Qaydalar</li>
                 </a>
@@ -105,10 +133,46 @@
                 </a>
             </ul>
         </div>
+
+        <div class="toggle-menu-reg" id="toggle-menu-reg">
+            <ul class="toggle-ul">
+                <li class="register-link-mob reg-btn-mob"><a href="beyanet.html"
+                        style="color: #ffffff !important;">Bəyan et</a></li>
+
+                <a href="unvanlarim.html">
+                    <li>Xaricdəki ünvanlarım</li>
+                </a>
+                <a href="baglamalarim.html">
+                    <li>Bağlamalarım</li>
+                </a>
+                <a href="menimuchunal.html">
+                    <li>Mənim üçün al</li>
+                </a>
+                <a href="sifarishlerim.html">
+                    <li>Sifarişlərim</li>
+                </a>
+                <a href="kuryer.html">
+                    <li>Kuryer</li>
+                </a>
+                <a href="balans.html">
+                    <li>Balans</li>
+                </a>
+                <a href="cashback.html">
+                    <li>Cashback</li>
+                </a>
+                <a href="tenzimlemeler.html">
+                    <li>Tənzimləmələr</li>
+                </a>
+                <a href="login.html">
+                    <li>Çıxış</li>
+                </a>
+            </ul>
+        </div>
     </nav>
 
+
     <section>
-        <div class="cabinet-container w-100">
+        <div class="cabinet-container w-100 cabinet-container-orderforme">
             <div id="cabinet-sidebar" class="cabinet-sidebar text-center">
                 <img src="uploads/userpp.png" />
                 <h3>Maleyka Aslanova</h3>
@@ -196,6 +260,95 @@
 
                 <div class="settings-row d-flex">
                     <input class="settings-input lg-settings-input lg-order-input" placeholder="Məhsulun detalları" />
+                </div>
+
+                <div class="terms-row">
+                    <input type="checkbox" class="chc-order" />
+                    <span>Təcili sifariş et (1$)</span>
+                </div>
+
+                <div class="final-amount">
+                    <span>Yekun məbləğ: </span>
+                    <span id="final-price">200$</span>
+                </div>
+
+                <div class="text-center m10"><button href="/Home/MyOrders" class="settings-btn-save">Sifariş et</button>
+                </div>
+            </div>
+
+            <div class="order-content settings-content-phone">
+                <h3 class="cab-header"
+                    style="text-align: center; color: #EC4953; font-size: 18px; font-weight: bold; margin-bottom: 10%;">
+                    Sifariş et</h3>
+
+                <div class="converter-container" style="background-color: #FFF5F1;">
+                    <p>
+                        <span>Diqqət!</span><br />
+                        Dəyərli müştərilərimiz, Amerika və Çin online alış-veriş mağazalarından sifariş etmədən öncə,
+                        sifariş etmək istədiyiniz məhsulun qiymətinin sağda Türk Lirası məzənnəsinə çevrilməsi və
+                        sifariş zamanı məhsul qiymətinin Türk Lirası məzənnəsi ilə qeyd edilməsi zəruridir.
+                    </p>
+
+                    <div class="converter-content">
+                        <div class="converter-row">
+                            <div class="d-flex">
+                                <input type="text" class="converter-input" placeholder="$" />
+                            </div>
+                            <i class="right-arrow"></i>
+                            <div class="d-flex">
+                                <input type="text" class="converter-input" placeholder="TL" />
+                            </div>
+                        </div>
+                        <div class="converter-row">
+                            <div class="d-flex">
+                                <input type="text" class="converter-input" placeholder="¥" />
+                            </div>
+                            <i class="right-arrow"></i>
+                            <div class="d-flex">
+                                <input type="text" class="converter-input" placeholder="TL" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-head d-flex justify-content-between">
+                    <h3 class="cab-header"></h3>
+
+                    <div class="settings-row button-country">
+                        <select class="boxes-select" id="selcountry">
+                            <option value="1">Türkiyə</option>
+                            <option value="2">Amerika</option>
+                            <option value="3">Çin</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="settings-row d-flex">
+                    <input class="settings-input order-input" placeholder="Məhsulun linki" />
+                </div>
+
+                <div class="settings-row d-flex">
+                    <input class="settings-input order-input" placeholder="Məhsulun sayı" />
+                </div>
+
+                <div class="settings-row d-flex">
+                    <input class="settings-input order-input" placeholder="Məhsulun qiyməti" />
+                </div>
+
+                <div class="settings-row d-flex">
+                    <input class="settings-input order-input" placeholder="Məhsulun rəngi" />
+                </div>
+
+                <div class="settings-row d-flex">
+                    <input class="settings-input order-input" placeholder="Məhsulun ölçüsü" />
+                </div>
+
+                <div class="settings-row d-flex">
+                    <input class="settings-input order-input" placeholder="Karqo ödənişi" />
+                </div>
+
+                <div class="settings-row d-flex">
+                    <input class="settings-input order-input" placeholder="Məhsulun detalları" />
                 </div>
 
                 <div class="terms-row">
