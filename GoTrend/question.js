@@ -110,6 +110,7 @@ $("#tbodychine").on("click", ".toolstd", function () {
   $(`#${clickedDivId}`).slideToggle();
   hideToolkits(clickedDivId);
 });
+
 function hideToolkits(id) {
   var toolkits = document.getElementsByClassName("toolkit");
   for (var i = 0; i < toolkits.length; i++) {
