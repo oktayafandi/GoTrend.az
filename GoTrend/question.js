@@ -9,6 +9,8 @@ function setActiveClass() {
 setActiveClass();
 
 $(document).ready(function () {
+  var leftnav = false;
+  var rightnav = false;
   if (window.matchMedia("(max-width: 500px)").matches) {
     function setToggleActiveClass() {
       var path = window.location.pathname;
@@ -22,6 +24,12 @@ $(document).ready(function () {
 
     setToggleActiveClass();
     $("#toggle-navbar").click(function (e) {
+      console.log("a");
+      if (rightnav == true) {
+        $(".toggle-menu-reg").css("display", "none");
+        rightnav = false;
+      }
+      leftnav = true;
       e.preventDefault();
       $(".toggle-menu").slideToggle();
     });
@@ -32,9 +40,7 @@ $(document).ready(function () {
       $(".toggle-menu").slideToggle();
     });
   }
-});
 
-$(document).ready(function () {
   if (window.matchMedia("(max-width: 500px)").matches) {
     function setToggleActiveClass() {
       var path = window.location.pathname;
@@ -48,11 +54,19 @@ $(document).ready(function () {
 
     setToggleActiveClass();
     $("#toggle-navbar-reg").click(function (e) {
+      console.log("a1");
+      if (leftnav == true) {
+        $(".toggle-menu").css("display", "none");
+        leftnav = false;
+      }
+      rightnav = true;
       e.preventDefault();
       $(".toggle-menu-reg").slideToggle();
     });
   }
 });
+
+// $(document).ready(function () {});
 
 function toggleAnswer(questionId) {
   if ($(`#${questionId}`).hasClass("fa-minus")) {
@@ -83,7 +97,7 @@ function changeTab(event, countryName, activeTabClass, tabContent) {
       ""
     );
   }
-  document.getElementById(countryName).style.display = "flex";
+  document.getElementById(countryName).style.display = "block";
   event.currentTarget.className += ` ${activeTabClass}`;
 }
 

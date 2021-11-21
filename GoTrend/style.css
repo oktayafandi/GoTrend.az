@@ -871,7 +871,7 @@ register-links {
 }
 
 .kg-range ul li {
-  margin: 11% 0;
+  margin: 10% 0;
 }
 
 .calculator-container {
@@ -2606,7 +2606,8 @@ register-links {
   }
 
   .calculator-row select {
-    background-image: url(../icons/T-calculator-down-small.svg);
+    background-image: url(uploads/dropicon.png);
+    background-position-x: 96%;
   }
 
   .btn-calculate {
@@ -2749,6 +2750,7 @@ register-links {
     border-radius: 10px;
     font-size: 12px;
     padding-left: 2.5%;
+    padding-right: 10%;
     background-image: url(uploads/COPY.svg);
   }
 
@@ -4271,7 +4273,7 @@ register-links {
   }
 
   .nav-links {
-    width: 80% !important;
+    width: 83% !important;
   }
 
   .site-logo {
@@ -4494,6 +4496,7 @@ register-links {
     margin-bottom: 0rem;
     font-weight: bold;
     font-size: 12px !important;
+    color: black !important;
   }
 
   .register-img {
@@ -5048,8 +5051,8 @@ register-links {
   }
 
   .lg-settings-input {
-    width: 96% !important;
-    margin: 0 2%;
+    width: 97% !important;
+    margin: 0 0%;
   }
 
   .lg-settings-input-kuryer {
@@ -5064,6 +5067,12 @@ register-links {
     width: 340px !important;
     margin-top: 8px;
     margin-left: 17px !important;
+  }
+}
+
+@media only screen and (min-width: 1340px) {
+  .nav-links {
+    width: 92% !important;
   }
 }
 
@@ -5144,6 +5153,10 @@ register-links {
   .toolstd {
     position: absolute;
     right: 19%;
+  }
+
+  .nav-links {
+    width: 80% !important;
   }
 
   .tarif {
@@ -5674,6 +5687,7 @@ register-links {
 .card-text-cashback {
   margin-bottom: 0rem;
   font-weight: bold;
+  color: black !important;
 }
 
 .slick-dots li {
