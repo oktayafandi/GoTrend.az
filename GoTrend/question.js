@@ -24,6 +24,7 @@ $(document).ready(function () {
 
     setToggleActiveClass();
     $("#toggle-navbar").click(function (e) {
+      $(".toolkit").css("display", "none");
       console.log("a");
       if (rightnav == true) {
         $(".toggle-menu-reg").css("display", "none");
@@ -54,6 +55,7 @@ $(document).ready(function () {
 
     setToggleActiveClass();
     $("#toggle-navbar-reg").click(function (e) {
+      $(".toolkit").css("display", "none");
       console.log("a1");
       if (leftnav == true) {
         $(".toggle-menu").css("display", "none");
@@ -65,8 +67,6 @@ $(document).ready(function () {
     });
   }
 });
-
-// $(document).ready(function () {});
 
 function toggleAnswer(questionId) {
   if ($(`#${questionId}`).hasClass("fa-minus")) {
@@ -85,6 +85,23 @@ function toggleAnswer(questionId) {
 }
 
 function changeTab(event, countryName, activeTabClass, tabContent) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName(tabContent);
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName(activeTabClass);
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(
+      ` ${activeTabClass}`,
+      ""
+    );
+  }
+  document.getElementById(countryName).style.display = "flex";
+  event.currentTarget.className += ` ${activeTabClass}`;
+}
+
+function changeTab1(event, countryName, activeTabClass, tabContent) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName(tabContent);
   for (i = 0; i < tabcontent.length; i++) {
@@ -120,6 +137,22 @@ $("#tbodyusa").on("click", ".toolstd", function () {
   hideToolkits(clickedDivId);
 });
 $("#tbodychine").on("click", ".toolstd", function () {
+  clickedDivId = $(this).siblings([HTMLDivElement]).attr("id");
+  $(`#${clickedDivId}`).slideToggle();
+  hideToolkits(clickedDivId);
+});
+
+$("#tbodyturkeymobile").on("click", ".toolstd", function () {
+  clickedDivId = $(this).siblings([HTMLDivElement]).attr("id");
+  $(`#${clickedDivId}`).slideToggle();
+  hideToolkits(clickedDivId);
+});
+$("#tbodyusamobile").on("click", ".toolstd", function () {
+  clickedDivId = $(this).siblings([HTMLDivElement]).attr("id");
+  $(`#${clickedDivId}`).slideToggle();
+  hideToolkits(clickedDivId);
+});
+$("#tbodychinamobile").on("click", ".toolstd", function () {
   clickedDivId = $(this).siblings([HTMLDivElement]).attr("id");
   $(`#${clickedDivId}`).slideToggle();
   hideToolkits(clickedDivId);

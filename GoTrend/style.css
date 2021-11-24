@@ -2757,16 +2757,21 @@ register-links {
   .large-addres {
     width: 90%;
     flex-direction: column;
-    margin-left: 15px;
+    margin-left: 30px;
     margin-bottom: 20px;
   }
 
   .commission-info {
-    height: 55px;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 70px !important;
+    background-color: #fff5f1;
+    padding: 3%;
+    margin: auto;
   }
 
   .commission-info p {
-    font-size: 10px;
+    font-size: 12px !important;
   }
 
   /*cabinet / settings*/
@@ -3663,7 +3668,7 @@ register-links {
   }
 
   .logo-small {
-    width: 90%;
+    width: 60%;
   }
 
   .logo {
@@ -3983,8 +3988,17 @@ register-links {
     padding: 0 2%;
   }
 
+  .lg-settings-input {
+    width: 92% !important;
+  }
+
   .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-    width: 235px !important;
+    width: 240px !important;
+  }
+
+  .bootstrap-select:not(.input-group-btn),
+  .bootstrap-select[class*="col-"] {
+    margin-left: 22px !important;
   }
 
   .tarif {
@@ -4537,13 +4551,12 @@ register-links {
     display: none;
     flex-direction: column;
     padding: 0.5%;
-    background: #fff5f1;
+    background: white;
     box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
     border-radius: 5px;
     position: absolute;
-    right: 5.3%;
-    width: 10%;
-    margin-top: -1.3%;
+    right: 16.3%;
+    width: 18%;
     z-index: 1000;
   }
 
@@ -5051,7 +5064,7 @@ register-links {
   }
 
   .lg-settings-input {
-    width: 97% !important;
+    width: 97%;
     margin: 0 0%;
   }
 
@@ -5750,7 +5763,7 @@ register-links {
 .cashback-list-ul {
   list-style: none;
   font-size: 12px;
-  padding: 30px 20px 30px 20px;
+  padding: 40px 20px 30px 20px;
 }
 
 .cashback-list-li {
