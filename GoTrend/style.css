@@ -2074,6 +2074,13 @@ register-links {
     font-size: 13px !important;
   }
 
+  .daterangepicker.opensleft:before {
+    right: 230px !important;
+  }
+
+  .daterangepicker.opensleft:after {
+    right: 231px !important;
+  }
   .bootstrap-select > .dropdown-toggle {
     position: relative;
     width: 320px !important;
@@ -2757,8 +2764,8 @@ register-links {
   .large-addres {
     width: 90%;
     flex-direction: column;
-    margin-left: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
+    margin: auto;
   }
 
   .commission-info {
@@ -2768,6 +2775,8 @@ register-links {
     background-color: #fff5f1;
     padding: 3%;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 80px;
   }
 
   .commission-info p {
@@ -2876,10 +2885,6 @@ register-links {
 
   .order-header {
     font-size: 9px;
-  }
-
-  .cabinet-container-orderforme {
-    padding: 0% !important;
   }
 
   .converter-container {
@@ -3034,6 +3039,10 @@ register-links {
     padding: 3% 3% 10% 3%;
   }
 
+  .cabinet-container-orderforme {
+    padding: 0% !important;
+  }
+
   .cabinet-sidebar {
     margin-right: 3%;
     height: auto;
@@ -3100,8 +3109,13 @@ register-links {
   .header,
   .sl-nav ul li,
   .register-link a {
-    font-size: 14px !important;
+    font-size: 12px !important;
     padding: 0 6%;
+  }
+
+  .nav-links {
+    font-size: 14px;
+    width: 80% !important;
   }
 
   .header-links {
@@ -3128,7 +3142,7 @@ register-links {
   }
 
   .logo-small {
-    width: 70%;
+    width: 55%;
   }
 
   .logo {
@@ -3343,7 +3357,7 @@ register-links {
   }
 
   .d-innovation-content p {
-    font-size: 18px;
+    font-size: 15px !important;
   }
 
   .d-innovation-content a {
@@ -4721,10 +4735,6 @@ register-links {
     padding: 0px 0px 0px 15px !important;
   }
 
-  .cabinet-container {
-    padding: 3% 3% 10%;
-  }
-
   .cabinet-sidebar {
     display: none;
     flex-direction: column;
@@ -4933,6 +4943,24 @@ register-links {
     font-size: 35px;
   }
 
+  .col-news {
+    width: 50% !important;
+  }
+
+  .yenilik-p {
+    font-size: 15px !important;
+    margin-top: 15px !important;
+  }
+
+  .yenilik-img {
+    width: 330px;
+  }
+
+  .yenilikler-img {
+    width: 500px !important;
+    margin-bottom: 15px;
+  }
+
   .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
     width: 170px !important;
     margin-left: 20px !important;
@@ -5006,12 +5034,26 @@ register-links {
   }
 
   .kg-range ul li {
-    margin: 11% 0;
+    margin: 10% 0;
+  }
+
+  .header-col {
+    width: 100% !important;
+  }
+
+  .section6 {
+    display: none;
+  }
+
+  .partnertext {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
   }
 
   .kg-range ul {
     list-style: none;
-    margin-top: 40px;
+    margin-top: 50px !important;
     padding-left: 0px;
   }
 
@@ -5029,7 +5071,7 @@ register-links {
   }
 
   .haqqimizda-img {
-    width: 700px;
+    width: 650px;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -5745,6 +5787,7 @@ register-links {
 .boxes-list {
   width: 300px;
   height: 220px;
+  margin-bottom: 30px !important;
   background-color: #fff5f1;
   margin: auto;
   display: flex;
@@ -5754,6 +5797,7 @@ register-links {
 .orders-list {
   width: 300px;
   height: 280px;
+  margin-bottom: 30px !important;
   background-color: #fff5f1;
   margin: auto;
   display: flex;
