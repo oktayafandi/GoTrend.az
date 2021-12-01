@@ -2081,7 +2081,7 @@ register-links {
   .daterangepicker.opensleft:after {
     right: 231px !important;
   }
-  .bootstrap-select > .dropdown-toggle {
+  /* .bootstrap-select > .dropdown-toggle {
     position: relative;
     width: 320px !important;
     height: 35px !important;
@@ -2101,11 +2101,11 @@ register-links {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-  }
+  } */
 
-  .bootstrap-select .dropdown-menu.inner {
+  /* .bootstrap-select .dropdown-menu.inner {
     width: 320px !important;
-  }
+  } */
 
   .card-col {
     width: 50% !important;
@@ -2167,7 +2167,7 @@ register-links {
     display: block;
   }
 
-  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  /* .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
     width: 85px !important;
   }
 
@@ -2195,7 +2195,7 @@ register-links {
     overflow: hidden;
     font-size: 13px;
     padding: -22px;
-  }
+  } */
 
   .toolstd {
     position: absolute;
@@ -2264,7 +2264,7 @@ register-links {
 
   .logo-small {
     width: 42px;
-    margin-left: -35px;
+    margin-left: -45px;
     margin-bottom: 5px;
   }
 
@@ -2752,7 +2752,7 @@ register-links {
   }
 
   .address-input {
-    width: 320px;
+    width: 340px;
     height: 35px;
     border-radius: 10px;
     font-size: 12px;
@@ -3113,6 +3113,11 @@ register-links {
     padding: 0 6%;
   }
 
+  .declare-select {
+    width: 28% !important;
+    height: 25px !important;
+  }
+
   .nav-links {
     font-size: 14px;
     width: 80% !important;
@@ -3466,6 +3471,7 @@ register-links {
 
   .settings-content {
     height: auto;
+    width: 470px;
   }
 
   .settings-input {
@@ -3520,7 +3526,33 @@ register-links {
     height: 25px;
     border-radius: 6px;
     font-size: 13px;
-    padding: 1.3% 3.5% !important;
+    padding: 0% 3.5% !important;
+  }
+
+  .toolkit-order {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 0.5%;
+    background: #fff5f1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    position: absolute;
+    right: 8.3%;
+    width: 10%;
+    margin-top: -1.3%;
+    z-index: 1000;
+  }
+
+  .cash-setting-stat {
+    width: 122px;
+    height: 30px;
+    background-color: #fff5f1;
+    border-radius: 10px;
+    border: 1px solid #595959;
+    font-size: 14px;
+    padding: 0 8px;
+    margin-top: 10px;
   }
 
   .btn-change-pass {
@@ -3652,6 +3684,10 @@ register-links {
   .sl-nav ul li,
   .register-link a {
     font-size: 16px !important;
+  }
+
+  .lg-settings-input-kuryer {
+    width: 93% !important;
   }
 
   .tarif {
@@ -3992,6 +4028,7 @@ register-links {
 
   .settings-content {
     height: auto;
+    width: 700px;
   }
 
   .settings-input {
@@ -4003,17 +4040,17 @@ register-links {
   }
 
   .lg-settings-input {
-    width: 92% !important;
+    width: 96% !important;
   }
 
-  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  /* .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
     width: 240px !important;
   }
 
   .bootstrap-select:not(.input-group-btn),
   .bootstrap-select[class*="col-"] {
     margin-left: 22px !important;
-  }
+  } */
 
   .tarif {
     margin-left: 48px !important;
@@ -4101,7 +4138,7 @@ register-links {
   }
 
   .order-content {
-    height: 590px;
+    height: 660px;
   }
 
   /* declare*/
@@ -4643,6 +4680,7 @@ register-links {
     justify-content: space-between !important;
     display: block !important;
     margin-bottom: 40px;
+    margin-left: 15px !important;
   }
 
   .cash-setting-btn {
@@ -4687,19 +4725,20 @@ register-links {
     font-size: 18px !important;
     text-align: left !important;
     margin-top: 40px !important;
+    margin-left: 15px !important;
   }
 
   .cashback-balance-active {
     background-color: #47baec;
     text-align: center;
-    margin-left: 85px !important;
+    margin-left: 100px !important;
     border-radius: 10px;
     margin-top: 0px !important;
   }
 
   .cashback-balance-red {
     background-color: #ec495e;
-    margin-left: 85px !important;
+    margin-left: 100px !important;
     border-radius: 10px;
     margin-top: 5px !important;
   }
@@ -4759,7 +4798,7 @@ register-links {
 
   .yenilikler-img {
     padding-bottom: 25px;
-    width: 355px !important;
+    width: 350px !important;
   }
 
   .forgotp-p {
@@ -4943,6 +4982,17 @@ register-links {
     font-size: 35px;
   }
 
+  .cabinet-sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 3.5% 0;
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-right: 5%;
+    background-color: #fff5f1;
+  }
+
   .col-news {
     width: 50% !important;
   }
@@ -4961,11 +5011,11 @@ register-links {
     margin-bottom: 15px;
   }
 
-  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  /* .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
     width: 170px !important;
     margin-left: 20px !important;
     height: 27px !important;
-  }
+  } */
 
   .cashback-balance-red {
     background-color: #ec495e;
@@ -4992,7 +5042,7 @@ register-links {
   .balance-input {
     font-weight: normal;
     font-size: 15px;
-    width: 95px;
+    width: 130px;
     height: 40px;
     padding: 4%;
     border: 1px solid #595959;
@@ -5212,10 +5262,6 @@ register-links {
 
   .nav-links {
     width: 80% !important;
-  }
-
-  .tarif {
-    margin-left: 35px !important;
   }
 
   .toolstd-order {
@@ -5668,12 +5714,6 @@ register-links {
   justify-content: space-between;
 } */
 
-.multi_select_box button {
-  background-color: #fff5f1;
-  border: 1px solid #595959;
-  border-radius: 8px;
-}
-
 .multi_select {
   width: 340px !important;
   margin-top: 8px;
@@ -5823,9 +5863,14 @@ register-links {
   color: #ec495e;
 }
 
-.bootstrap-select:not(.input-group-btn),
+/* .bootstrap-select:not(.input-group-btn),
 .bootstrap-select[class*="col-"] {
   float: none;
   display: inline-block;
   margin-left: 17px !important;
+} */
+
+.value-ul {
+  text-align: right;
+  padding: 10px 20px 30px 20px;
 }
