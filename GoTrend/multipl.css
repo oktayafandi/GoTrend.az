@@ -418,6 +418,38 @@ select.selectpicker {
   float: none;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 370px) {
+  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    margin-left: 0px !important;
+  }
+
+  .bootstrap-select > .dropdown-toggle {
+    position: relative;
+    width: 300px !important;
+    border: 1px solid;
+    height: 35px;
+    text-align: right;
+    margin-bottom: 2%;
+    white-space: nowrap;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .bootstrap-select .dropdown-menu {
+    min-width: 88% !important;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .bootstrap-select > .dropdown-toggle {
     position: relative;
@@ -455,7 +487,7 @@ select.selectpicker {
   }
 }
 
-@media only screen and (min-width: 1350px) and (max-width: 1350px) {
+@media only screen and (min-width: 1350px) and (max-width: 1354px) {
   .bootstrap-select > .dropdown-toggle {
     background: transparent;
     border: 1px solid gray;
@@ -487,6 +519,64 @@ select.selectpicker {
   .lg-settings-input-kuryer {
     width: 95% !important;
     margin: 0 2%;
+  }
+}
+
+@media only screen and (min-width: 1355px) and (max-width: 1380px) {
+  .bootstrap-select > .dropdown-toggle {
+    position: relative;
+    width: 340px;
+    border: 1px solid;
+    height: 40px;
+    margin-left: 18px;
+    text-align: right;
+    margin-bottom: 2%;
+    white-space: nowrap;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .tarif {
+    margin-left: 58px !important;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1320px) {
+  .bootstrap-select > .dropdown-toggle {
+    position: relative;
+    width: 340px;
+    border: 1px solid;
+    height: 40px;
+    margin-left: -7px;
+    text-align: right;
+    margin-bottom: 2%;
+    white-space: nowrap;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .tarif {
+    margin-left: 15px !important;
   }
 }
 
@@ -554,5 +644,101 @@ select.selectpicker {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 415px) {
+  .multi_select {
+    margin-left: 35px !important;
+  }
+}
+
+@media only screen and (min-width: 1345px) and (max-width: 1349px) {
+  .bootstrap-select > .dropdown-toggle {
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 40px;
+    margin-left: 18px;
+    position: relative;
+    width: 340px;
+    text-align: right;
+    white-space: nowrap;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .tarif {
+    margin-left: 50px !important;
+  }
+}
+
+@media only screen and (min-width: 1381px) and (max-width: 1410px) {
+  .bootstrap-select > .dropdown-toggle {
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 40px;
+    position: relative;
+    margin-left: 25px;
+    width: 340px;
+    text-align: right;
+    white-space: nowrap;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .tarif {
+    margin-left: 68px !important;
+  }
+}
+
+@media only screen and (min-width: 1411px) and (max-width: 1439px) {
+  .bootstrap-select > .dropdown-toggle {
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 40px;
+    position: relative;
+    margin-left: 25px;
+    width: 340px;
+    text-align: right;
+    white-space: nowrap;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .tarif {
+    margin-left: 68px !important;
   }
 }
