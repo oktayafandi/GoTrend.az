@@ -108,12 +108,27 @@ function changeTab1(event, countryName, activeTabClass, tabContent) {
     tabcontent[i].style.display = "none";
   }
   tablinks = document.getElementsByClassName(activeTabClass);
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(
-      ` ${activeTabClass}`,
-      ""
-    );
+
+  $(document).on("click", ".boxes-tab-buttons .tab-link", function () {
+    $(this).addClass(activeTabClass).siblings().removeClass(activeTabClass);
+  });
+
+  document.getElementById(countryName).style.display = "block";
+  event.currentTarget.className += ` ${activeTabClass}`;
+}
+
+function changeTab2(event, countryName, activeTabClass, tabContent) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName(tabContent);
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
   }
+  tablinks = document.getElementsByClassName(activeTabClass);
+
+  $(document).on("click", ".adress-tab-buttons .tab-link", function () {
+    $(this).addClass(activeTabClass).siblings().removeClass(activeTabClass);
+  });
+
   document.getElementById(countryName).style.display = "block";
   event.currentTarget.className += ` ${activeTabClass}`;
 }

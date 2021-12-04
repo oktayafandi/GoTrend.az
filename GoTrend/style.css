@@ -5147,6 +5147,11 @@ register-links {
     margin-top: 65px;
     padding-left: 0px;
   }
+
+  .lg-settings-input {
+    width: 93.5% !important;
+    margin: 0 2.5%;
+  }
 }
 
 @media only screen and (max-width: 1340px) {
@@ -5157,7 +5162,7 @@ register-links {
   }
 
   .lg-settings-input {
-    width: 97%;
+    width: 95% !important;
     margin: 0 0%;
   }
 
@@ -5186,6 +5191,11 @@ register-links {
   .toolstd {
     position: absolute;
     right: 9.5%;
+  }
+
+  .lg-settings-input {
+    width: 93% !important;
+    margin: 0 2.5%;
   }
 
   .tarif {
@@ -5307,6 +5317,23 @@ register-links {
   }
 }
 
+@media only screen and (max-width: 1360px) {
+  .lg-settings-input-kuryer {
+    width: 95% !important;
+    margin: 0 4%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .lg-settings-input {
+    width: 96.5% !important;
+    margin: 0 0%;
+  }
+
+  .lg-settings-input-kuryer {
+    width: 97% !important;
+  }
+}
 .logo {
   width: 155px;
   height: 80px;
@@ -5874,4 +5901,10 @@ register-links {
 .value-ul {
   text-align: right;
   padding: 10px 20px 30px 20px;
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+  .address-input {
+    padding-right: 50px !important;
+  }
 }
