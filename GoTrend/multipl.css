@@ -423,6 +423,13 @@ select.selectpicker {
     margin-left: 0px !important;
   }
 
+  .bootstrap-select .dropdown-menu {
+    min-width: 94%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
   .bootstrap-select > .dropdown-toggle {
     position: relative;
     width: 300px !important;
@@ -471,6 +478,13 @@ select.selectpicker {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+
+  .bootstrap-select .dropdown-menu {
+    min-width: 94%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   .multi_select_box button {
@@ -650,6 +664,13 @@ select.selectpicker {
 @media only screen and (min-width: 414px) and (max-width: 415px) {
   .multi_select {
     margin-left: 35px !important;
+  }
+
+  .bootstrap-select .dropdown-menu {
+    min-width: 94%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 

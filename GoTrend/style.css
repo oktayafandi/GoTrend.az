@@ -326,7 +326,7 @@ register-links {
   background-color: #ec495e;
   margin-top: 12px;
   margin-bottom: 12px;
-  padding: 3px 14px;
+  padding: 3px 14px !important;
   font-size: 12px;
   text-align: center;
   border-radius: 5px;
@@ -1536,6 +1536,10 @@ register-links {
 .converter-container p span {
   font-weight: bold;
   color: #ec495e;
+}
+
+.yenilik-img {
+  width: 350px;
 }
 
 .converter-input {
@@ -3114,6 +3118,15 @@ register-links {
     padding: 0 6%;
   }
 
+  .lg-settings-input {
+    width: 92.5% !important;
+    margin: 0 0%;
+  }
+
+  .lg-settings-input-kuryer {
+    width: 92% !important;
+  }
+
   .declare-select {
     width: 28% !important;
     height: 25px !important;
@@ -4197,12 +4210,12 @@ register-links {
   }
 }
 
-.tarif {
+/* .tarif {
   margin-left: 30px !important;
-}
+} */
 
 .tarif-content {
-  padding: 0 6% 10% 6%;
+  padding: 0 6% 5% 6%;
 }
 
 .prices {
@@ -4277,6 +4290,16 @@ register-links {
 .country-tab-controls button.active-tab {
   background-color: #fafafa;
   color: #ec4953;
+}
+
+@media only screen and (min-width: 413px) and (max-width: 420px) {
+  .caption-tarif {
+    text-align: inherit !important;
+    margin: 20px;
+    padding-bottom: 10px;
+    font-size: 10px !important;
+    color: white;
+  }
 }
 
 @media only screen and (max-width: 1330px) {
@@ -4435,7 +4458,7 @@ register-links {
     width: 223px !important;
     height: 120px;
     border-radius: 10px;
-    margin-left: 155px !important;
+    margin: auto;
     margin-top: 30px !important;
   }
 
@@ -4444,7 +4467,7 @@ register-links {
     width: 223px !important;
     height: 120px;
     border-radius: 10px;
-    margin-left: 155px !important;
+    margin: auto;
     margin-top: 30px !important;
   }
 
@@ -4530,9 +4553,212 @@ register-links {
   }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 355px) {
+  .kg-range {
+    font-size: 8px !important;
+    margin-top: 3%;
+    margin-right: 2%;
+  }
+
+  .caption-tarif {
+    text-align: inherit !important;
+    margin: 20px;
+    padding-bottom: 10px;
+    font-size: 10px !important;
+    color: white;
+  }
+
+  .prices ul li {
+    font-size: 8px !important;
+    margin: 11.3% 0;
+  }
+
+  .yenilikler-img {
+    padding-bottom: 25px;
+    width: 295px !important;
+  }
+
+  .order-input {
+    width: 310px !important;
+    height: 35px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .settings-input-kuryer-phone {
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding-left: 12px;
+    background-color: transparent;
+    margin: auto;
+    border: 1px solid;
+    margin-bottom: 10px;
+  }
+
+  .cashback-balance-red {
+    background-color: #ec495e;
+    margin: auto !important;
+    border-radius: 10px;
+    margin-top: 5px !important;
+  }
+
+  .cash-setting-stat {
+    margin: 0px 0px 0px 0px !important;
+    width: 122px !important;
+    height: 30px !important;
+    background-color: transparent !important;
+    border-radius: 10px !important;
+    border: 1px solid #595959 !important;
+    font-size: 12px !important;
+  }
+
+  .cash-setting-cal {
+    margin: 0px 0px 0px 0px !important;
+    width: 140px !important;
+    height: 30px !important;
+    background-color: transparent !important;
+    border-radius: 10px !important;
+    border: 1px solid #595959 !important;
+    font-size: 11px !important;
+    padding: 0 8px !important;
+    background-image: url(uploads/calendar.png) !important;
+    background-repeat: no-repeat !important;
+    background-position-x: 95% !important;
+    background-position-y: 55% !important;
+    padding-right: 25px !important;
+  }
+
+  .cashback-balance-active {
+    background-color: #47baec;
+    text-align: center;
+    margin: auto !important;
+    border-radius: 10px;
+    margin-top: 0px !important;
+  }
+
+  .settings-input-phone {
+    width: 300px;
+    height: 35px;
+    border: 1px solid #595959;
+    border-radius: 10px;
+    font-weight: 400;
+    color: #c4c4c4;
+    font-size: 14px;
+    background-color: transparent;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    padding: 0 0 0 15px;
+  }
+
+  .balance-btn {
+    margin-bottom: 29px !important;
+    width: 113px !important;
+    height: 31px !important;
+    border-radius: 10px !important;
+    font-size: 12px !important;
+  }
+
+  .box-select-orders {
+    text-align: start;
+    width: 115px;
+    height: 22px;
+    border: 1px solid #ec495e;
+    background-color: transparent !important;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 11px;
+    padding: 0 2%;
+    color: #ec495e;
+    -webkit-appearance: none;
+    background-image: url(/icons/drpicon-pink.svg);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    margin-left: 190px;
+  }
+
+  .converter-input {
+    width: 135px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+
+  .box-select-orders {
+    text-align: start;
+    width: 115px;
+    height: 22px;
+    border: 1px solid #ec495e;
+    background-color: transparent !important;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 11px;
+    padding: 0 2%;
+    color: #ec495e;
+    -webkit-appearance: none;
+    background-image: url(/icons/drpicon-pink.svg);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    margin-left: 190px;
+  }
+
+  .address-input {
+    width: 290px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 12px;
+    padding-left: 2.5%;
+    padding-right: 10%;
+    background-image: url(/icons/COPY.svg);
+  }
+
+  .contact-item p {
+    font-size: 12px !important;
+    margin-top: 4%;
+  }
+
+  .yenilik-p {
+    font-size: 8px !important;
+    margin-top: 0px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .kg-range ul li {
+    margin: 11% 0 !important;
+  }
+
+  .yenilik-img {
+    width: 140px !important;
+    margin-bottom: 10px;
+  }
+
+  .haqqimizda-img {
+    width: 300px !important;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .calculator-container-phone {
     display: block !important;
+  }
+
+  .caption-tarif {
+    text-align: inherit !important;
+    margin: 20px;
+    padding-bottom: 10px;
+    font-size: 10px !important;
+    color: white;
   }
 
   .balans-cabinet {
@@ -4712,7 +4938,7 @@ register-links {
   }
 
   .cash-setting-stat {
-    margin: 0px 0px 0px 40px !important;
+    margin: 0px 0px 0px 20px;
     width: 122px !important;
     height: 30px !important;
     background-color: transparent !important;
@@ -4720,6 +4946,15 @@ register-links {
     border: 1px solid #595959 !important;
     font-size: 12px !important;
     padding: 0 8px !important;
+  }
+
+  .cashback-list {
+    width: 295px !important;
+    height: 250px;
+    background-color: #fff5f1;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
   }
 
   .cashback-story-header {
@@ -4732,15 +4967,15 @@ register-links {
   .cashback-balance-active {
     background-color: #47baec;
     text-align: center;
-    margin-left: 100px !important;
+    margin: auto;
     border-radius: 10px;
     margin-top: 0px !important;
   }
 
   .cashback-balance-red {
     background-color: #ec495e;
-    margin-left: 100px !important;
     border-radius: 10px;
+    margin: auto;
     margin-top: 5px !important;
   }
 
@@ -4799,7 +5034,7 @@ register-links {
 
   .yenilikler-img {
     padding-bottom: 25px;
-    width: 350px !important;
+    width: 345px !important;
   }
 
   .forgotp-p {
@@ -4939,11 +5174,19 @@ register-links {
 
 @media only screen and (min-width: 320px) and (max-width: 500px) {
   .haqqimizda-img {
-    width: 350px;
+    width: 345px;
     justify-content: center;
     text-align: center;
     align-items: center;
     padding-bottom: 20px;
+  }
+
+  .caption-tarif {
+    text-align: inherit !important;
+    margin: 20px;
+    padding-bottom: 10px;
+    font-size: 10px !important;
+    color: white;
   }
 
   .yenilik-img-prom {
@@ -5023,7 +5266,7 @@ register-links {
     width: 223px !important;
     height: 120px;
     border-radius: 10px;
-    margin-left: 90px;
+    margin: auto;
     margin-top: 30px !important;
   }
 
@@ -5032,7 +5275,7 @@ register-links {
     width: 223px !important;
     height: 120px;
     border-radius: 10px;
-    margin-left: 90px !important;
+    margin: auto;
     margin-top: 30px !important;
   }
 
@@ -5098,8 +5341,13 @@ register-links {
 
   .partnertext {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Open Sans", sans-serif;
+  }
+
+  .partnericon {
+    margin-top: 10px;
+    width: 60px;
   }
 
   .kg-range ul {
@@ -5334,6 +5582,7 @@ register-links {
     width: 97% !important;
   }
 }
+
 .logo {
   width: 155px;
   height: 80px;
@@ -5527,6 +5776,7 @@ register-links {
 
 .yenilikler-img {
   width: 550px;
+  margin-bottom: 15px;
 }
 
 .cabinet-menu {
@@ -5568,7 +5818,7 @@ register-links {
   width: 223px !important;
   height: 120px;
   border-radius: 10px;
-  margin-left: 100px;
+  margin: auto;
   margin-top: 30px !important;
 }
 
@@ -5577,7 +5827,7 @@ register-links {
   width: 223px !important;
   height: 120px;
   border-radius: 10px;
-  margin-right: 100px;
+  margin: auto;
   margin-top: 30px !important;
 }
 
@@ -5878,6 +6128,13 @@ register-links {
   padding: 40px 20px 30px 20px;
 }
 
+.cashback-list-ul-1 {
+  list-style: none;
+  font-size: 12px;
+  text-align: right;
+  padding: 40px 20px 30px 20px;
+}
+
 .cashback-list-li {
   padding-bottom: 10px;
 }
@@ -5907,4 +6164,22 @@ register-links {
   .address-input {
     padding-right: 50px !important;
   }
+}
+
+.question-link {
+  color: #ec495e;
+  text-decoration: none;
+}
+
+.question-link:hover {
+  color: #ec495e;
+  text-decoration: none;
+}
+
+.caption-tarif {
+  text-align: center;
+  margin: 20px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: white;
 }
