@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box !important;
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
   /*    overflow-x:hidden;*/
 }
 
@@ -204,6 +205,10 @@ register-links {
   color: #000000;
 }
 
+.header-links ul li a:hover {
+  color: #ec495e;
+}
+
 .phone .phone-icon {
   margin-bottom: 6px !important;
   margin-right: 5px !important;
@@ -223,6 +228,10 @@ register-links {
 
 .sign-in ul li a {
   color: #000000;
+}
+
+.sign-in ul li a:hover {
+  color: #ec495e;
 }
 
 .sl-nav {
@@ -451,7 +460,6 @@ register-links {
 .footer-links ul li a {
   text-decoration: none;
   color: #000000;
-  transition: 0.3s;
 }
 
 .footer-links ul li a:hover,
@@ -610,6 +618,10 @@ register-links {
   cursor: pointer;
 }
 
+.pass-forgotten:hover {
+  color: #ec495e;
+}
+
 /*register*/
 
 .register-container {
@@ -678,6 +690,10 @@ register-links {
   color: #ec495e;
   font-size: 16px;
   margin: auto 2%;
+}
+
+.terms-row a:hover {
+  color: #ec495e;
 }
 
 .btn-register {
@@ -1213,6 +1229,10 @@ register-links {
   font-size: 18px;
 }
 
+.cabinet-sidebar ul li a:hover {
+  color: #ec495e;
+}
+
 .my-address-content {
   width: 60% !important;
   justify-content: center;
@@ -1335,6 +1355,12 @@ register-links {
 
 .commission-info p a {
   color: #ec495e;
+  text-decoration: none;
+}
+
+.commission-info p a:hover {
+  color: #ec495e;
+  text-decoration: none;
 }
 
 /*cabinet / settings*/
@@ -2931,6 +2957,7 @@ register-links {
     width: 100%;
     justify-content: center;
     padding: 6% 0;
+    max-width: 100%;
   }
 
   .order-header i {
