@@ -207,6 +207,7 @@ register-links {
 
 .header-links ul li a:hover {
   color: #ec495e;
+  text-decoration: none;
 }
 
 .phone .phone-icon {
@@ -232,6 +233,7 @@ register-links {
 
 .sign-in ul li a:hover {
   color: #ec495e;
+  text-decoration: none;
 }
 
 .sl-nav {
@@ -400,6 +402,7 @@ register-links {
 }
 
 .partnertext {
+  font-size: 22px;
   margin-top: 10px;
   font-family: "Open Sans", sans-serif;
 }
@@ -455,6 +458,7 @@ register-links {
 
 .nav-links ul li a:hover {
   color: #ec495e;
+  text-decoration: none;
 }
 
 .footer-links ul li a {
@@ -465,6 +469,7 @@ register-links {
 .footer-links ul li a:hover,
 .footer-contact a:hover {
   color: #ec495e;
+  text-decoration: none;
 }
 
 .footer-contact a {
@@ -620,6 +625,7 @@ register-links {
 
 .pass-forgotten:hover {
   color: #ec495e;
+  text-decoration: none;
 }
 
 /*register*/
@@ -1565,7 +1571,8 @@ register-links {
 }
 
 .yenilik-img {
-  width: 350px;
+  width: 360px;
+  height: 240px;
 }
 
 .converter-input {
@@ -2103,6 +2110,57 @@ register-links {
   .sl-nav ul li,
   .register-link a {
     font-size: 13px !important;
+  }
+
+  .kuryer-order {
+    height: 35px !important;
+    margin-top: 20px !important;
+    padding-left: 15px;
+    background-color: transparent;
+    width: 100%;
+    left: 945px;
+    top: 509.58px;
+    border: 1px solid #595959;
+    border-radius: 10px;
+  }
+
+  .multi_select_box {
+    margin-top: 25px !important;
+  }
+
+  .kuryer-select {
+    margin-top: 20px !important;
+    padding-left: 15px;
+    font-size: 16px;
+    width: 100%;
+    height: 35px !important;
+    left: 555px;
+    top: 510px;
+    border: 1px solid #595959;
+    box-sizing: border-box;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    background: transparent !important;
+    background-image: url(uploads/dropicon-black.png) !important;
+    background-repeat: no-repeat !important;
+    background-position-x: 95% !important;
+    background-position-y: 50% !important;
+  }
+
+  .yeniliklerdetail {
+    text-align: center;
+  }
+
+  .yenilikler-p1 {
+    font-size: 18px;
+    text-align: initial;
+  }
+
+  .yenilikler-p2 {
+    padding-top: 25px;
+    font-size: 18px;
+    padding-bottom: 50px;
+    text-align: initial;
   }
 
   .daterangepicker.opensleft:before {
@@ -2783,7 +2841,7 @@ register-links {
   }
 
   .address-input {
-    width: 340px;
+    width: 100%;
     height: 35px;
     border-radius: 10px;
     font-size: 12px;
@@ -4340,9 +4398,9 @@ register-links {
     margin-left: 25px !important;
   }
 
-  .multi_select {
+  /* .multi_select {
     margin-left: 15px !important;
-  }
+  } */
 
   .lg-settings-input-kuryer {
     margin: 0px 4%;
@@ -4386,6 +4444,7 @@ register-links {
 
   .yenilikler-img {
     width: 540px !important;
+    height: 340px;
   }
 
   .nav-links {
@@ -4403,6 +4462,7 @@ register-links {
 
   .yenilik-img {
     width: 360px;
+    height: 240px;
   }
 }
 
@@ -4455,6 +4515,7 @@ register-links {
 
   .yenilikler-img {
     width: 540px !important;
+    height: 340px;
   }
 
   .nav-links {
@@ -4472,6 +4533,7 @@ register-links {
 
   .yenilik-img {
     width: 360px;
+    height: 240px;
   }
 }
 
@@ -4519,10 +4581,12 @@ register-links {
 
   .yenilikler-img {
     width: 450px !important;
+    height: 280px;
   }
 
   .yenilik-img {
     width: 290px !important;
+    height: 200px;
   }
 
   .contactitem-work {
@@ -4737,7 +4801,7 @@ register-links {
   }
 
   .address-input {
-    width: 290px;
+    width: 100%;
     height: 35px;
     border-radius: 10px;
     font-size: 12px;
@@ -4764,6 +4828,7 @@ register-links {
   .yenilik-img {
     width: 140px !important;
     margin-bottom: 10px;
+    height: 95px;
   }
 
   .haqqimizda-img {
@@ -4915,7 +4980,7 @@ register-links {
 
   .kuryer-text {
     margin-top: 15px !important;
-    margin-left: 15px !important;
+    margin-left: 0px !important;
     margin-bottom: 15px !important;
   }
 
@@ -5061,7 +5126,8 @@ register-links {
 
   .yenilikler-img {
     padding-bottom: 25px;
-    width: 345px !important;
+    width: 300px !important;
+    height: 250px !important;
   }
 
   .forgotp-p {
@@ -5153,6 +5219,7 @@ register-links {
 
   .yenilik-img {
     width: 165px;
+    height: 100px;
     margin-bottom: 10px;
   }
 
@@ -5275,6 +5342,7 @@ register-links {
 
   .yenilik-img {
     width: 330px;
+    height: 240px;
   }
 
   .yenilikler-img {
@@ -5449,11 +5517,11 @@ register-links {
     margin-left: 30px !important;
   }
 
-  .multi_select {
+  /* .multi_select {
     width: 340px !important;
     margin-top: 8px;
     margin-left: 17px !important;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1340px) {
@@ -5469,7 +5537,7 @@ register-links {
   }
 
   .lg-settings-input {
-    width: 93% !important;
+    width: 93.5% !important;
     margin: 0 2.5%;
   }
 
@@ -5477,12 +5545,12 @@ register-links {
     margin-left: 30px !important;
   }
 
-  .multi_select {
+  /* .multi_select {
     width: 340px !important;
     margin-top: 8px;
     margin-left: 25px !important;
     margin-right: 15px !important;
-  }
+  } */
 
   .site-logo {
     width: 10%;
@@ -5802,8 +5870,9 @@ register-links {
 }
 
 .yenilikler-img {
-  width: 550px;
+  width: 520px;
   margin-bottom: 15px;
+  height: 340px;
 }
 
 .cabinet-menu {
@@ -5966,6 +6035,16 @@ register-links {
 }
 
 .kuryer-select {
+  margin-top: 25px;
+  padding-left: 15px;
+  font-size: 16px;
+  width: 100%;
+  height: 40.42px;
+  left: 555px;
+  top: 510px;
+  border: 1px solid #595959;
+  box-sizing: border-box;
+  border-radius: 10px;
   -webkit-appearance: none;
   background: #fff5f1;
   background-image: url(uploads/dropicon-black.png);
@@ -5992,10 +6071,12 @@ register-links {
 
 .nav-phone {
   color: black;
+  text-decoration: none !important;
 }
 
 .nav-phone:hover {
   color: #ec495e;
+  text-decoration: none !important;
 }
 
 /* .bootstrap-select > .dropdown-toggle {
@@ -6019,11 +6100,11 @@ register-links {
   justify-content: space-between;
 } */
 
-.multi_select {
+/* .multi_select {
   width: 340px !important;
   margin-top: 8px;
   margin-left: 25px;
-}
+} */
 
 .section6 {
   margin-top: 30px;
@@ -6209,4 +6290,18 @@ register-links {
   padding-bottom: 15px;
   font-size: 20px;
   color: white;
+}
+
+/* ----------- */
+
+.kuryer-order {
+  margin-top: 25px;
+  padding-left: 15px;
+  background-color: transparent;
+  width: 100%;
+  height: 40.42px;
+  left: 945px;
+  top: 509.58px;
+  border: 1px solid #595959;
+  border-radius: 10px;
 }

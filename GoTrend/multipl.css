@@ -13,7 +13,7 @@ select.selectpicker {
   border-radius: 10px;
   height: 40px;
   position: relative;
-  width: 340px;
+  width: 100%;
   text-align: right;
   white-space: nowrap;
   display: -webkit-inline-box;
@@ -71,7 +71,7 @@ select.selectpicker {
 }
 
 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-  width: 220px;
+  width: 100%;
 }
 
 .bootstrap-select .dropdown-toggle:focus,
@@ -262,7 +262,7 @@ select.selectpicker {
 .bootstrap-select .dropdown-menu .notify {
   position: absolute;
   bottom: 5px;
-  width: 96%;
+  width: 100%;
   margin: 0 2%;
   min-height: 26px;
   padding: 3px 5px;
@@ -424,7 +424,7 @@ select.selectpicker {
   }
 
   .bootstrap-select .dropdown-menu {
-    min-width: 94%;
+    min-width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -432,11 +432,10 @@ select.selectpicker {
 
   .bootstrap-select > .dropdown-toggle {
     position: relative;
-    width: 300px !important;
+    width: 100%;
     border: 1px solid;
     height: 35px;
     text-align: right;
-    margin-bottom: 2%;
     white-space: nowrap;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -453,18 +452,17 @@ select.selectpicker {
   }
 
   .bootstrap-select .dropdown-menu {
-    min-width: 88% !important;
+    min-width: 100% !important;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .bootstrap-select > .dropdown-toggle {
     position: relative;
-    width: 320px;
+    width: 100%;
     border: 1px solid;
     height: 35px;
     text-align: right;
-    margin-bottom: 2%;
     white-space: nowrap;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -481,7 +479,7 @@ select.selectpicker {
   }
 
   .bootstrap-select .dropdown-menu {
-    min-width: 94%;
+    min-width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -494,7 +492,7 @@ select.selectpicker {
   }
 
   .bootstrap-select .dropdown-menu {
-    min-width: 94%;
+    min-width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -508,8 +506,7 @@ select.selectpicker {
     border-radius: 10px;
     height: 40px;
     position: relative;
-    width: 340px;
-    margin-left: 19px;
+    width: 100%;
     text-align: right;
     white-space: nowrap;
     display: -webkit-inline-box;
@@ -539,12 +536,10 @@ select.selectpicker {
 @media only screen and (min-width: 1355px) and (max-width: 1380px) {
   .bootstrap-select > .dropdown-toggle {
     position: relative;
-    width: 340px;
+    width: 100%;
     border: 1px solid;
     height: 40px;
-    margin-left: 18px;
     text-align: right;
-    margin-bottom: 2%;
     white-space: nowrap;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -568,12 +563,10 @@ select.selectpicker {
 @media only screen and (min-width: 1300px) and (max-width: 1320px) {
   .bootstrap-select > .dropdown-toggle {
     position: relative;
-    width: 340px;
+    width: 100%;
     border: 1px solid;
     height: 40px;
-    margin-left: -7px;
     text-align: right;
-    margin-bottom: 2%;
     white-space: nowrap;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -596,7 +589,7 @@ select.selectpicker {
 
 @media only screen and (min-width: 800px) and (max-width: 1024px) {
   .multi_select_box {
-    width: 50% !important;
+    width: 100% !important;
   }
 
   .tarif {
@@ -613,8 +606,7 @@ select.selectpicker {
     border-radius: 10px;
     height: 40px;
     position: relative;
-    width: 230px;
-    margin-left: 7px;
+    width: 100%;
     text-align: right;
     white-space: nowrap;
     display: -webkit-inline-box;
@@ -634,7 +626,7 @@ select.selectpicker {
 
 @media only screen and (max-width: 768px) and (min-width: 500px) {
   .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-    width: 192px !important;
+    width: 100% !important;
   }
 
   .bootstrap-select > .dropdown-toggle {
@@ -643,7 +635,7 @@ select.selectpicker {
     border-radius: 10px;
     height: 40px;
     position: relative;
-    width: 190px;
+    width: 100%;
     text-align: right;
     white-space: nowrap;
     display: -webkit-inline-box;
@@ -662,12 +654,8 @@ select.selectpicker {
 }
 
 @media only screen and (min-width: 414px) and (max-width: 415px) {
-  .multi_select {
-    margin-left: 35px !important;
-  }
-
   .bootstrap-select .dropdown-menu {
-    min-width: 94%;
+    min-width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -680,9 +668,8 @@ select.selectpicker {
     border: 1px solid gray;
     border-radius: 10px;
     height: 40px;
-    margin-left: 18px;
     position: relative;
-    width: 340px;
+    width: 100%;
     text-align: right;
     white-space: nowrap;
     display: -webkit-inline-box;
@@ -711,8 +698,7 @@ select.selectpicker {
     border-radius: 10px;
     height: 40px;
     position: relative;
-    margin-left: 25px;
-    width: 340px;
+    width: 100%;
     text-align: right;
     white-space: nowrap;
     display: -webkit-inline-box;
@@ -741,8 +727,7 @@ select.selectpicker {
     border-radius: 10px;
     height: 40px;
     position: relative;
-    margin-left: 25px;
-    width: 340px;
+    width: 100%;
     text-align: right;
     white-space: nowrap;
     display: -webkit-inline-box;
