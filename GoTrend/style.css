@@ -43,12 +43,24 @@ select {
   color: #ffffff !important;
 } */
 
+.gm-inset-light {
+  display: none !important;
+}
+
+.gm-inset-map {
+  display: none !important;
+}
+
 .activee {
   background-color: white !important;
 }
 
 .space-around {
   justify-content: space-around;
+}
+
+.yeniliklerdetail {
+  margin-bottom: 30px;
 }
 
 .space-between {
@@ -129,7 +141,7 @@ button {
   font-size: 36px;
   color: #ec495e;
   margin-top: 8%;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   text-align: center !important;
 }
 
@@ -181,6 +193,11 @@ button {
 .phone,
 register-links {
   width: 100%;
+}
+
+.phone:hover {
+  text-decoration: none;
+  color: #ec495e;
 }
 
 .header a {
@@ -241,6 +258,17 @@ register-links {
   font-size: 17px;
   color: #000000;
   font-weight: 400;
+}
+
+.setting-input {
+  border: 1px solid #595959;
+  border-radius: 10px;
+  width: 100%;
+  height: 40px;
+  padding-left: 15px;
+  background-color: transparent;
+  font-size: 16px;
+  margin-bottom: 25px;
 }
 
 .sl-nav ul {
@@ -688,7 +716,12 @@ register-links {
 
 .terms-row {
   display: flex;
-  margin-top: 5% !important;
+  margin-top: 3% !important;
+}
+
+.terms-row-order {
+  display: flex;
+  margin-top: 0% !important;
 }
 
 .terms-row a {
@@ -698,7 +731,18 @@ register-links {
   margin: auto 2%;
 }
 
+.terms-row-order a {
+  text-decoration: none;
+  color: #ec495e;
+  font-size: 16px;
+  margin: auto 2%;
+}
+
 .terms-row a:hover {
+  color: #ec495e;
+}
+
+.terms-row-order a:hover {
   color: #ec495e;
 }
 
@@ -834,7 +878,7 @@ register-links {
 
 .country-row {
   display: flex;
-  margin: 10% 0 6% 0;
+  margin: 6% 0 6% 0;
 }
 
 .country-row h3 {
@@ -1350,7 +1394,7 @@ register-links {
   height: 100px;
   background-color: #fff5f1;
   padding: 3%;
-  margin: 2%;
+  margin: auto;
 }
 
 .commission-info p {
@@ -1481,8 +1525,14 @@ register-links {
 
 /*order*/
 .order-input {
-  width: 47% !important;
+  width: 100% !important;
   height: 40px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  border: 1px solid #595959;
+  background-color: transparent;
+  padding-left: 15px;
+  font-size: 16px;
 }
 
 .lg-order-input {
@@ -1515,7 +1565,18 @@ register-links {
   color: #ec495e;
 }
 
+.settings-content .terms-row-order span {
+  margin: auto 0;
+  font-weight: normal;
+  font-size: 15px;
+  color: #ec495e;
+}
+
 .settings-content .terms-row a {
+  margin-left: auto;
+}
+
+.settings-content .terms-row-order a {
   margin-left: auto;
 }
 
@@ -1600,6 +1661,10 @@ register-links {
 
 .order-head .cab-header {
   margin-top: 2%;
+}
+
+.innovation-header {
+  margin-bottom: 40px;
 }
 
 .order-content {
@@ -2112,6 +2177,18 @@ register-links {
     font-size: 13px !important;
   }
 
+  .order-input {
+    width: 95% !important;
+    height: 40px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 1px solid #595959;
+    background-color: transparent;
+    padding-left: 15px;
+    font-size: 16px;
+  }
+
   .kuryer-order {
     height: 35px !important;
     margin-top: 20px !important;
@@ -2499,7 +2576,7 @@ register-links {
 
   .btn-login {
     width: 148px;
-    height: 39px;
+    height: 35px;
     border-radius: 6px;
     font-size: 14px;
   }
@@ -2557,15 +2634,20 @@ register-links {
 
   .register-row {
     margin-top: 4%;
+    margin-bottom: 5%;
   }
 
   .terms-row a {
     font-size: 10px;
   }
 
+  .terms-row-order a {
+    font-size: 10px;
+  }
+
   .btn-register {
     width: 148px;
-    height: 39px;
+    height: 35px;
     font-weight: 400;
     font-size: 12px;
     margin: 6% 0 15% 0%;
@@ -2947,15 +3029,6 @@ register-links {
   }
 
   /*order*/
-  .order-input {
-    width: 320px !important;
-    height: 35px;
-  }
-
-  .lg-order-input {
-    height: 20px;
-    width: 96% !important;
-  }
 
   .final-amount {
     font-size: 12px;
@@ -2969,6 +3042,10 @@ register-links {
   }
 
   .settings-content .terms-row span {
+    font-size: 8px;
+  }
+
+  .settings-content .terms-row-order span {
     font-size: 8px;
   }
 
@@ -2993,14 +3070,24 @@ register-links {
     display: flex;
     margin-top: 5% !important;
     font-size: 12px;
-    margin-left: 5%;
+    margin-left: 2%;
+    color: #ec495e;
+  }
+
+  .terms-row-order {
+    display: flex;
+    margin-top: 5% !important;
+    font-size: 12px;
+    margin-left: 2%;
     color: #ec495e;
   }
 
   .converter-container p {
     width: 100%;
     font-weight: 400;
+    text-align: initial;
     font-size: 12px;
+    margin-bottom: 10px;
   }
 
   .converter-input {
@@ -3011,6 +3098,7 @@ register-links {
   }
 
   .order-content {
+    text-align: center;
     height: auto;
     width: 100%;
     justify-content: center;
@@ -3101,7 +3189,7 @@ register-links {
   }
 
   .declare-input {
-    width: 320px;
+    width: 315px;
     height: 35px;
     border-radius: 10px;
     padding: 0px 0px 0px 15px;
@@ -3346,6 +3434,10 @@ register-links {
   }
 
   .terms-row a {
+    font-size: 16px;
+  }
+
+  .terms-row-order a {
     font-size: 16px;
   }
 
@@ -3659,16 +3751,6 @@ register-links {
   }
 
   /*order*/
-  .order-input {
-    height: 25px;
-    border-radius: 5px;
-    font-size: 12px;
-  }
-
-  .lg-order-input {
-    height: 25px;
-    font-size: 12px;
-  }
 
   .final-amount {
     font-size: 12px;
@@ -3684,6 +3766,14 @@ register-links {
   }
 
   .settings-content .terms-row a {
+    font-size: 12px;
+  }
+
+  .settings-content .terms-row-order span {
+    font-size: 12px;
+  }
+
+  .settings-content .terms-row-order a {
     font-size: 12px;
   }
 
@@ -3926,6 +4016,10 @@ register-links {
   }
 
   .terms-row a {
+    font-size: 16px;
+  }
+
+  .terms-row-order a {
     font-size: 16px;
   }
 
@@ -4200,16 +4294,6 @@ register-links {
   }
 
   /*order*/
-  .order-input {
-    height: 30px;
-    border-radius: 5px;
-    font-size: 12px;
-  }
-
-  .lg-order-input {
-    height: 30px;
-    font-size: 12px;
-  }
 
   .final-amount {
     font-size: 12px;
@@ -4225,6 +4309,14 @@ register-links {
   }
 
   .settings-content .terms-row a {
+    font-size: 12px;
+  }
+
+  .settings-content .terms-row-order span {
+    font-size: 12px;
+  }
+
+  .settings-content .terms-row-order a {
     font-size: 12px;
   }
 
@@ -4346,7 +4438,7 @@ register-links {
 
 .country-row {
   display: flex;
-  margin: 10% 0 6% 0;
+  margin: 6% 0 6% 0;
 }
 
 .country-row h3 {
@@ -4667,13 +4759,6 @@ register-links {
   .yenilikler-img {
     padding-bottom: 25px;
     width: 295px !important;
-  }
-
-  .order-input {
-    width: 310px !important;
-    height: 35px;
-    margin-right: 5px;
-    margin-left: 5px;
   }
 
   .settings-input-kuryer-phone {
@@ -5082,7 +5167,7 @@ register-links {
   }
 
   .declare-select {
-    width: 320px !important;
+    width: 310px !important;
     height: 35px !important;
     margin: 0 auto;
     margin-bottom: 15px;
@@ -5125,7 +5210,7 @@ register-links {
   }
 
   .yenilikler-img {
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     width: 300px !important;
     height: 250px !important;
   }
@@ -5224,7 +5309,7 @@ register-links {
   }
 
   .yenilik-row {
-    padding: 50px 0px 100px 13px;
+    padding: 30px 0px 100px 13px;
   }
 
   .balance-input-dollar {
@@ -5321,11 +5406,11 @@ register-links {
   }
 
   .cabinet-sidebar {
+    height: 530px;
     display: flex;
     flex-direction: column;
     padding: 3.5% 0;
     width: 200px;
-    height: auto;
     float: left;
     margin-right: 5%;
     background-color: #fff5f1;
@@ -5391,11 +5476,6 @@ register-links {
     background-repeat: no-repeat;
     background-position-x: 93%;
     background-position-y: 50%;
-  }
-
-  .cabinet-sidebar {
-    height: auto;
-    margin-bottom: 15%;
   }
 
   .contactitem-work {
@@ -5753,7 +5833,7 @@ register-links {
 }
 
 .yenilik-row {
-  padding: 50px 0px 100px 0px;
+  padding: 30px 0px 100px 0px;
 }
 
 .yenilik-p {
@@ -6067,6 +6147,7 @@ register-links {
 
 .btn-declare:hover {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .nav-phone {
