@@ -209,3 +209,9 @@ function hideToolkits(id) {
 $(document).ready(function () {
   $(".multi_select").selectpicker();
 });
+
+// let spinnerWrapper = document.querySelector(".spinner-wrapper");
+
+// window.addEventListener("load", function () {
+//   spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+// });
