@@ -221,3 +221,9 @@ const pagination = (activePageClass) => {
     $(this).addClass(activePageClass).siblings().removeClass(activePageClass);
   });
 };
+
+// let scrollDiv = document.querySelector(".boxes-scroll");
+
+// window.addEventListener("scroll", function() {
+//   scrollDiv.parentElement
+// })

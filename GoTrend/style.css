@@ -530,6 +530,18 @@ register-links {
   transform: rotate(-20deg);
 }
 
+.social-networks .facebook-div:hover {
+  transform: scale(1.1);
+  color: #139cf7;
+  transform: rotate(-20deg);
+}
+
+.boxes-scroll {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 300px;
+}
+
 .social-networks a {
   color: #373435;
 }
@@ -5139,6 +5151,7 @@ register-links {
   }
 
   .cashback-list {
+    margin-top: 15px !important;
     width: 295px !important;
     height: 250px;
     background-color: #fff5f1;
@@ -5825,6 +5838,16 @@ register-links {
   color: #ec495e;
 }
 
+.user-name {
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.user-code {
+  margin-bottom: 5px;
+}
+
 .question div:first-child i {
   font-style: normal;
   font-size: 22px;
@@ -6150,6 +6173,9 @@ register-links {
   margin: 6% 6% 0 1% !important;
 }
 
+.face-icon:hover {
+  color: blue;
+}
 .mobile-img {
   display: none;
 }
@@ -6229,7 +6255,7 @@ register-links {
 
 .settings-content-phone {
   display: none;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .reg-btn-mob {
@@ -6297,6 +6323,7 @@ register-links {
 }
 
 .cashback-list {
+  margin-top: 15px !important;
   width: 300px;
   height: 250px;
   background-color: #fff5f1;
@@ -6439,6 +6466,7 @@ register-links {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
 }
 
 @keyframes spin {
