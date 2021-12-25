@@ -210,11 +210,11 @@ $(document).ready(function () {
   $(".multi_select").selectpicker();
 });
 
-let spinnerWrapper = document.querySelector(".spinner-wrapper");
+// let spinnerWrapper = document.querySelector(".spinner-wrapper");
 
-window.addEventListener("load", function () {
-  spinnerWrapper.parentElement.removeChild(spinnerWrapper);
-});
+// window.addEventListener("load", function () {
+//   spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+// });
 
 const pagination = (activePageClass) => {
   $(document).on("click", ".paginationn .pagen", function () {
