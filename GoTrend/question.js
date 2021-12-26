@@ -210,11 +210,10 @@ $(document).ready(function () {
   $(".multi_select").selectpicker();
 });
 
-// let spinnerWrapper = document.querySelector(".spinner-wrapper");
-
-// window.addEventListener("load", function () {
-//   spinnerWrapper.parentElement.removeChild(spinnerWrapper);
-// });
+let spinnerWrapper = document.querySelector(".spinner-wrapper");
+window.addEventListener("load", function () {
+  spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+});
 
 const pagination = (activePageClass) => {
   $(document).on("click", ".paginationn .pagen", function () {
@@ -222,8 +221,20 @@ const pagination = (activePageClass) => {
   });
 };
 
-// let scrollDiv = document.querySelector(".boxes-scroll");
+let scrollDiv = document.querySelector(".boxes-scroll");
+window.addEventListener("scroll", function () {
+  scrollDiv.parentElement;
+  // $(".toolkit").css("display", "none");
+});
 
-// window.addEventListener("scroll", function() {
-//   scrollDiv.parentElement
-// })
+// $("#toggle-navbar").click(function (e) {
+//   $(".toolkit").css("display", "none");
+//   console.log("a");
+//   if (rightnav == true) {
+//     $(".toggle-menu-reg").css("display", "none");
+//     rightnav = false;
+//   }
+//   leftnav = true;
+//   e.preventDefault();
+//   $(".toggle-menu").slideToggle();
+// });
