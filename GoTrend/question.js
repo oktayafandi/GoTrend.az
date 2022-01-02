@@ -197,6 +197,7 @@ $("#tbodychine").on("click", ".toolstd-order", function () {
   $(`#${clickedDivId}`).slideToggle();
   hideToolkits(clickedDivId);
 });
+
 function hideToolkits(id) {
   var toolkits = document.getElementsByClassName("toolkit-order");
   for (var i = 0; i < toolkits.length; i++) {
@@ -222,19 +223,8 @@ const pagination = (activePageClass) => {
 };
 
 let scrollDiv = document.querySelector(".boxes-scroll");
-window.addEventListener("scroll", function () {
-  scrollDiv.parentElement;
-  // $(".toolkit").css("display", "none");
-});
 
-// $("#toggle-navbar").click(function (e) {
-//   $(".toolkit").css("display", "none");
-//   console.log("a");
-//   if (rightnav == true) {
-//     $(".toggle-menu-reg").css("display", "none");
-//     rightnav = false;
-//   }
-//   leftnav = true;
-//   e.preventDefault();
-//   $(".toggle-menu").slideToggle();
-// });
+scrollDiv.addEventListener("scroll", function () {
+  scrollDiv.parentElement;
+  $(".toolkit").css("display", "none");
+});
